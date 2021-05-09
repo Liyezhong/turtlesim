@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>StdTypes</SHORT-NAME>
+          <ELEMENTS>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>bool</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>float</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>double</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>int8_t</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <TYPE-EMITTER>cstdint</TYPE-EMITTER>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>int16_t</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <TYPE-EMITTER>cstdint</TYPE-EMITTER>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>int32_t</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <TYPE-EMITTER>cstdint</TYPE-EMITTER>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>int64_t</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <TYPE-EMITTER>cstdint</TYPE-EMITTER>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>uint8_t</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <TYPE-EMITTER>cstdint</TYPE-EMITTER>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>uint16_t</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <TYPE-EMITTER>cstdint</TYPE-EMITTER>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>uint32_t</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <TYPE-EMITTER>cstdint</TYPE-EMITTER>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+            <STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>uint64_t</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <TYPE-EMITTER>cstdint</TYPE-EMITTER>
+            </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="75d737c8-84f5-46c4-a92f-d52262b208cb">
+          <SHORT-NAME>Application_design</SHORT-NAME>
+          <ELEMENTS>
+            <STARTUP-CONFIG-SET UUID="bfc0312e-ae64-4eb1-8be3-d55a44934d31">
+              <SHORT-NAME>StartupConfigSet</SHORT-NAME>
+              <STARTUP-CONFIGS>
+                <STARTUP-CONFIG UUID="4519fd47-0ee6-4425-bafa-3baa4e972325">
+                  <SHORT-NAME>roslocatorStartupConfig</SHORT-NAME>
+                  <SCHEDULING-POLICY>SCHEDULING-POLICY-ROUND-ROBIN</SCHEDULING-POLICY>
+                  <SCHEDULING-PRIORITY>10</SCHEDULING-PRIORITY>
+                  <STARTUP-OPTIONS>
+                    <STARTUP-OPTION>
+                      <OPTION-ARGUMENT>./etc/application.json</OPTION-ARGUMENT>
+                      <OPTION-KIND>COMMAND-LINE-SHORT-FORM</OPTION-KIND>
+                      <OPTION-NAME>c</OPTION-NAME>
+                    </STARTUP-OPTION>
+                  </STARTUP-OPTIONS>
+                </STARTUP-CONFIG>
+                <STARTUP-CONFIG UUID="80bf6327-4169-47c5-a782-84e4b24e7c2f">
+                  <SHORT-NAME>apcontrollerStartupConfig</SHORT-NAME>
+                  <SCHEDULING-POLICY>SCHEDULING-POLICY-FIFO</SCHEDULING-POLICY>
+                  <SCHEDULING-PRIORITY>1</SCHEDULING-PRIORITY>
+                  <STARTUP-OPTIONS>
+                    <STARTUP-OPTION>
+                      <OPTION-ARGUMENT>./etc/application.json</OPTION-ARGUMENT>
+                      <OPTION-KIND>COMMAND-LINE-SHORT-FORM</OPTION-KIND>
+                      <OPTION-NAME>c</OPTION-NAME>
+                    </STARTUP-OPTION>
+                  </STARTUP-OPTIONS>
+                </STARTUP-CONFIG>
+                <STARTUP-CONFIG UUID="5c3e5750-84ca-4397-8e82-52733e957575">
+                  <SHORT-NAME>apconverterStartupConfig</SHORT-NAME>
+                  <SCHEDULING-POLICY>SCHEDULING-POLICY-ROUND-ROBIN</SCHEDULING-POLICY>
+                  <SCHEDULING-PRIORITY>5</SCHEDULING-PRIORITY>
+                  <STARTUP-OPTIONS>
+                    <STARTUP-OPTION>
+                      <OPTION-ARGUMENT>./etc/application.json</OPTION-ARGUMENT>
+                      <OPTION-KIND>COMMAND-LINE-SHORT-FORM</OPTION-KIND>
+                      <OPTION-NAME>c</OPTION-NAME>
+                    </STARTUP-OPTION>
+                  </STARTUP-OPTIONS>
+                </STARTUP-CONFIG>
+                <STARTUP-CONFIG UUID="f1bd8fa3-6a89-480d-9e34-3198c9e527ed">
+                  <SHORT-NAME>apactuatorStartupConfig</SHORT-NAME>
+                  <SCHEDULING-POLICY>SCHEDULING-POLICY-ROUND-ROBIN</SCHEDULING-POLICY>
+                  <SCHEDULING-PRIORITY>1</SCHEDULING-PRIORITY>
+                  <STARTUP-OPTIONS>
+                    <STARTUP-OPTION>
+                      <OPTION-ARGUMENT>./etc/application.json</OPTION-ARGUMENT>
+                      <OPTION-KIND>COMMAND-LINE-SHORT-FORM</OPTION-KIND>
+                      <OPTION-NAME>c</OPTION-NAME>
+                    </STARTUP-OPTION>
+                  </STARTUP-OPTIONS>
+                </STARTUP-CONFIG>
+              </STARTUP-CONFIGS>
+            </STARTUP-CONFIG-SET>
+          </ELEMENTS>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="b848bafd-71fa-4798-bbc2-0dac707e91e0">
+              <SHORT-NAME>AP_controller_app</SHORT-NAME>
+              <ELEMENTS>
+                <ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE UUID="ed8bbbfe-4e8f-4b6f-a318-5450f7265959">
+                  <SHORT-NAME>controller</SHORT-NAME>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE UUID="1d02def8-d775-4495-8ed8-31272fbfa565">
+                      <SHORT-NAME>speed_control</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/speed_control/speed_control</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="2c070141-7a44-4278-b3f7-2fc5ded1dd75">
+                      <SHORT-NAME>driving_information</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/driving_information/driving_information</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="bb8e38c0-fbbc-45d5-a2db-5906f19b6e7d">
+                      <SHORT-NAME>external_elements</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/external_elements/external_elements</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                </ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE>
+                <EXECUTABLE UUID="b9f92bda-f129-484d-9899-05557c91d776">
+                  <SHORT-NAME>AP_controller</SHORT-NAME>
+                  <CATEGORY>APPLICATION_LEVEL</CATEGORY>
+                  <BUILD-TYPE>BUILD-TYPE-DEBUG</BUILD-TYPE>
+                  <ROOT-SW-COMPONENT-PROTOTYPE UUID="d6a756ae-078e-41aa-8b43-6761936a9fa7">
+                    <SHORT-NAME>controller</SHORT-NAME>
+                    <APPLICATION-TYPE-TREF DEST="ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE">/turtlesim/Application_design/AP_controller_app/controller</APPLICATION-TYPE-TREF>
+                  </ROOT-SW-COMPONENT-PROTOTYPE>
+                </EXECUTABLE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="bec55862-5a0f-4b95-b8fd-9f1f5864a264">
+              <SHORT-NAME>AP_actuator_app</SHORT-NAME>
+              <ELEMENTS>
+                <EXECUTABLE UUID="576f8874-33d4-4514-8788-d77ae8c768e1">
+                  <SHORT-NAME>AP_actuator</SHORT-NAME>
+                  <CATEGORY>APPLICATION_LEVEL</CATEGORY>
+                  <BUILD-TYPE>BUILD-TYPE-DEBUG</BUILD-TYPE>
+                  <ROOT-SW-COMPONENT-PROTOTYPE UUID="b17cd16f-3f3d-488f-9cba-00f463d3ac69">
+                    <SHORT-NAME>actuator</SHORT-NAME>
+                    <APPLICATION-TYPE-TREF DEST="ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE">/turtlesim/Application_design/AP_actuator_app/actuator</APPLICATION-TYPE-TREF>
+                  </ROOT-SW-COMPONENT-PROTOTYPE>
+                </EXECUTABLE>
+                <ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE UUID="8db2caff-e0a8-445b-9b9f-7e00ecfb36a3">
+                  <SHORT-NAME>actuator</SHORT-NAME>
+                  <PORTS>
+                    <R-PORT-PROTOTYPE UUID="e4e5dbc4-a8fb-4eb7-adbf-3b62aecba08f">
+                      <SHORT-NAME>speed_control</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/speed_control/speed_control</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="2128b469-107b-4728-a068-411602754970">
+                      <SHORT-NAME>driving_information</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/driving_information/driving_information</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                </ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="d2fed41c-5aec-400a-8bbf-5280ec23a132">
+              <SHORT-NAME>rosap_exe</SHORT-NAME>
+              <ELEMENTS>
+                <ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE UUID="da3ca52d-32c2-4b58-9db1-d158dfb163a7">
+                  <SHORT-NAME>rosap_converter</SHORT-NAME>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE UUID="d2355068-87d1-45c8-8c16-faac3c8d32ed">
+                      <SHORT-NAME>PPort_drivinginfomation</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/driving_information/driving_information</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <R-PORT-PROTOTYPE UUID="03cc8f93-4c8b-4ff6-962b-757a58e14944">
+                      <SHORT-NAME>RPort_external_elements</SHORT-NAME>
+                      <REQUIRED-INTERFACE-TREF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/external_elements/external_elements</REQUIRED-INTERFACE-TREF>
+                    </R-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="d1f4c8f6-6abb-444e-81c7-4ba93bb283ac">
+                      <SHORT-NAME>PPort_speed_control</SHORT-NAME>
+                      <PROVIDED-INTERFACE-TREF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/speed_control/speed_control</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                </ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE>
+                <EXECUTABLE UUID="feb678a2-bc32-4d8c-ab29-43be372aa334">
+                  <SHORT-NAME>rosap_exe</SHORT-NAME>
+                  <ROOT-SW-COMPONENT-PROTOTYPE UUID="2e2fd428-cdd6-4a29-9728-777c12df75c9">
+                    <SHORT-NAME>cswc</SHORT-NAME>
+                    <APPLICATION-TYPE-TREF DEST="ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE">/turtlesim/Application_design/rosap_exe/rosap_converter</APPLICATION-TYPE-TREF>
+                  </ROOT-SW-COMPONENT-PROTOTYPE>
+                </EXECUTABLE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="6d9cf75a-bb76-4a8d-b5b2-ff1c79983e48">
+          <SHORT-NAME>Machines</SHORT-NAME>
+          <ELEMENTS>
+            <MACHINE-DESIGN UUID="4102e5e4-a36d-4af8-b76d-0bac0acf8178">
+              <SHORT-NAME>PCMachineDesign</SHORT-NAME>
+              <COMMUNICATION-CONNECTORS>
+                <ETHERNET-COMMUNICATION-CONNECTOR UUID="77e00f67-05af-4124-8da6-76ef9be38a4c">
+                  <SHORT-NAME>Networkendpoint</SHORT-NAME>
+                  <UNICAST-NETWORK-ENDPOINT-REF DEST="NETWORK-ENDPOINT">/turtlesim/Machines/eth0/eth0Chnl/Networkendpoint</UNICAST-NETWORK-ENDPOINT-REF>
+                </ETHERNET-COMMUNICATION-CONNECTOR>
+              </COMMUNICATION-CONNECTORS>
+              <SERVICE-DISCOVER-CONFIGS>
+                <SOMEIP-SERVICE-DISCOVERY>
+                  <MULTICAST-SD-IP-ADDRESS-REF DEST="NETWORK-ENDPOINT">/turtlesim/Machines/eth0/eth0Chnl/Multicast_sdaddr</MULTICAST-SD-IP-ADDRESS-REF>
+                  <SOMEIP-SERVICE-DISCOVERY-PORT>12330</SOMEIP-SERVICE-DISCOVERY-PORT>
+                </SOMEIP-SERVICE-DISCOVERY>
+              </SERVICE-DISCOVER-CONFIGS>
+            </MACHINE-DESIGN>
+            <MACHINE-DESIGN UUID="593a6906-2ec4-48c6-9438-ba9820dc02b5">
+              <SHORT-NAME>raspiMachineDesign</SHORT-NAME>
+              <COMMUNICATION-CONNECTORS>
+                <ETHERNET-COMMUNICATION-CONNECTOR UUID="874585ec-5628-4ce6-a250-685b489bf46a">
+                  <SHORT-NAME>Networkendpointraspi</SHORT-NAME>
+                  <UNICAST-NETWORK-ENDPOINT-REF DEST="NETWORK-ENDPOINT">/turtlesim/Machines/eth2/eth0Chnl/Networkendpointraspi</UNICAST-NETWORK-ENDPOINT-REF>
+                </ETHERNET-COMMUNICATION-CONNECTOR>
+              </COMMUNICATION-CONNECTORS>
+              <SERVICE-DISCOVER-CONFIGS>
+                <SOMEIP-SERVICE-DISCOVERY>
+                  <MULTICAST-SD-IP-ADDRESS-REF DEST="NETWORK-ENDPOINT">/turtlesim/Machines/eth2/eth0Chnl/Multicast_sdaddr</MULTICAST-SD-IP-ADDRESS-REF>
+                  <SOMEIP-SERVICE-DISCOVERY-PORT>12330</SOMEIP-SERVICE-DISCOVERY-PORT>
+                </SOMEIP-SERVICE-DISCOVERY>
+              </SERVICE-DISCOVER-CONFIGS>
+            </MACHINE-DESIGN>
+            <MACHINE-DESIGN UUID="baafd130-ff39-449e-af39-073c014f814b">
+              <SHORT-NAME>xilinxMachineDesign</SHORT-NAME>
+              <COMMUNICATION-CONNECTORS>
+                <ETHERNET-COMMUNICATION-CONNECTOR UUID="b2aaca0f-7ba4-4115-86f0-97098c1636ec">
+                  <SHORT-NAME>Networkendpoint</SHORT-NAME>
+                  <UNICAST-NETWORK-ENDPOINT-REF DEST="NETWORK-ENDPOINT">/turtlesim/Machines/eth1/eth1Chnl/Networkendpoint</UNICAST-NETWORK-ENDPOINT-REF>
+                </ETHERNET-COMMUNICATION-CONNECTOR>
+              </COMMUNICATION-CONNECTORS>
+              <SERVICE-DISCOVER-CONFIGS>
+                <SOMEIP-SERVICE-DISCOVERY>
+                  <MULTICAST-SD-IP-ADDRESS-REF DEST="NETWORK-ENDPOINT">/turtlesim/Machines/eth1/eth1Chnl/Multicast_sdaddr</MULTICAST-SD-IP-ADDRESS-REF>
+                  <SOMEIP-SERVICE-DISCOVERY-PORT>12330</SOMEIP-SERVICE-DISCOVERY-PORT>
+                </SOMEIP-SERVICE-DISCOVERY>
+              </SERVICE-DISCOVER-CONFIGS>
+            </MACHINE-DESIGN>
+            <ETHERNET-CLUSTER UUID="fded0db5-5470-492c-aed8-d8ce119fc8be">
+              <SHORT-NAME>eth0</SHORT-NAME>
+              <ETHERNET-CLUSTER-VARIANTS>
+                <ETHERNET-CLUSTER-CONDITIONAL>
+                  <PHYSICAL-CHANNELS>
+                    <ETHERNET-PHYSICAL-CHANNEL UUID="9a5a9c4b-c1d4-445b-bd18-5e527026a4ad">
+                      <SHORT-NAME>eth0Chnl</SHORT-NAME>
+                      <NETWORK-ENDPOINTS>
+                        <NETWORK-ENDPOINT UUID="d0c9f01a-f051-422f-85a0-aecbe81e6dec">
+                          <SHORT-NAME>Networkendpoint</SHORT-NAME>
+                          <FULLY-QUALIFIED-DOMAIN-NAME/>
+                          <NETWORK-ENDPOINT-ADDRESSES>
+                            <IPV-4-CONFIGURATION>
+                              <IPV-4-ADDRESS>192.168.1.50</IPV-4-ADDRESS>
+                            </IPV-4-CONFIGURATION>
+                          </NETWORK-ENDPOINT-ADDRESSES>
+                        </NETWORK-ENDPOINT>
+                        <NETWORK-ENDPOINT UUID="40304679-fd2d-419e-bc0d-4d3ae46f9149">
+                          <SHORT-NAME>Multicast_sdaddr</SHORT-NAME>
+                          <NETWORK-ENDPOINT-ADDRESSES>
+                            <IPV-4-CONFIGURATION>
+                              <IPV-4-ADDRESS>239.255.255.255</IPV-4-ADDRESS>
+                            </IPV-4-CONFIGURATION>
+                          </NETWORK-ENDPOINT-ADDRESSES>
+                        </NETWORK-ENDPOINT>
+                      </NETWORK-ENDPOINTS>
+                    </ETHERNET-PHYSICAL-CHANNEL>
+                  </PHYSICAL-CHANNELS>
+                </ETHERNET-CLUSTER-CONDITIONAL>
+              </ETHERNET-CLUSTER-VARIANTS>
+            </ETHERNET-CLUSTER>
+            <ETHERNET-CLUSTER UUID="df26219a-5fb3-4bc8-826f-04a37f9ed803">
+              <SHORT-NAME>eth1</SHORT-NAME>
+              <ETHERNET-CLUSTER-VARIANTS>
+                <ETHERNET-CLUSTER-CONDITIONAL>
+                  <PHYSICAL-CHANNELS>
+                    <ETHERNET-PHYSICAL-CHANNEL UUID="de845a9e-88d4-4e56-b359-bd61b1788750">
+                      <SHORT-NAME>eth1Chnl</SHORT-NAME>
+                      <NETWORK-ENDPOINTS>
+                        <NETWORK-ENDPOINT UUID="c8c1e2a2-a78f-491b-995c-8175e0285465">
+                          <SHORT-NAME>Networkendpoint</SHORT-NAME>
+                          <FULLY-QUALIFIED-DOMAIN-NAME/>
+                          <NETWORK-ENDPOINT-ADDRESSES>
+                            <IPV-4-CONFIGURATION>
+                              <IPV-4-ADDRESS>192.168.1.60</IPV-4-ADDRESS>
+                            </IPV-4-CONFIGURATION>
+                          </NETWORK-ENDPOINT-ADDRESSES>
+                        </NETWORK-ENDPOINT>
+                        <NETWORK-ENDPOINT UUID="c1f0e75a-ee3c-4b80-9df6-a2d13ad3349a">
+                          <SHORT-NAME>Multicast_sdaddr</SHORT-NAME>
+                          <NETWORK-ENDPOINT-ADDRESSES>
+                            <IPV-4-CONFIGURATION>
+                              <IPV-4-ADDRESS>239.255.255.255</IPV-4-ADDRESS>
+                            </IPV-4-CONFIGURATION>
+                          </NETWORK-ENDPOINT-ADDRESSES>
+                        </NETWORK-ENDPOINT>
+                      </NETWORK-ENDPOINTS>
+                    </ETHERNET-PHYSICAL-CHANNEL>
+                  </PHYSICAL-CHANNELS>
+                </ETHERNET-CLUSTER-CONDITIONAL>
+              </ETHERNET-CLUSTER-VARIANTS>
+            </ETHERNET-CLUSTER>
+            <ETHERNET-CLUSTER UUID="479cba2f-b754-46c2-8090-0d06e4d0e35b">
+              <SHORT-NAME>eth2</SHORT-NAME>
+              <ETHERNET-CLUSTER-VARIANTS>
+                <ETHERNET-CLUSTER-CONDITIONAL>
+                  <PHYSICAL-CHANNELS>
+                    <ETHERNET-PHYSICAL-CHANNEL UUID="9f2191c2-3d45-435f-bc15-b26546af8ac6">
+                      <SHORT-NAME>eth0Chnl</SHORT-NAME>
+                      <NETWORK-ENDPOINTS>
+                        <NETWORK-ENDPOINT UUID="358952d4-76ed-4111-b3c3-6df6b5b97d80">
+                          <SHORT-NAME>Networkendpointraspi</SHORT-NAME>
+                          <FULLY-QUALIFIED-DOMAIN-NAME/>
+                          <NETWORK-ENDPOINT-ADDRESSES>
+                            <IPV-4-CONFIGURATION>
+                              <IPV-4-ADDRESS>192.168.1.70</IPV-4-ADDRESS>
+                            </IPV-4-CONFIGURATION>
+                          </NETWORK-ENDPOINT-ADDRESSES>
+                        </NETWORK-ENDPOINT>
+                        <NETWORK-ENDPOINT UUID="478d86df-b069-4e38-bdfa-1015dc2dbdd0">
+                          <SHORT-NAME>Multicast_sdaddr</SHORT-NAME>
+                          <NETWORK-ENDPOINT-ADDRESSES>
+                            <IPV-4-CONFIGURATION>
+                              <IPV-4-ADDRESS>239.255.255.255</IPV-4-ADDRESS>
+                            </IPV-4-CONFIGURATION>
+                          </NETWORK-ENDPOINT-ADDRESSES>
+                        </NETWORK-ENDPOINT>
+                      </NETWORK-ENDPOINTS>
+                    </ETHERNET-PHYSICAL-CHANNEL>
+                  </PHYSICAL-CHANNELS>
+                </ETHERNET-CLUSTER-CONDITIONAL>
+              </ETHERNET-CLUSTER-VARIANTS>
+            </ETHERNET-CLUSTER>
+          </ELEMENTS>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="3426ddfd-8dc9-4748-84b8-86a976b39a18">
+              <SHORT-NAME>EM_states</SHORT-NAME>
+              <ELEMENTS>
+                <MODE-DECLARATION-GROUP UUID="c2a9fb89-d642-46ad-8d7a-b70d2efee698">
+                  <SHORT-NAME>RaspiMachineMachineState</SHORT-NAME>
+                  <INITIAL-MODE-REF DEST="MODE-DECLARATION">/turtlesim/Machines/EM_states/RaspiMachineMachineState/Off</INITIAL-MODE-REF>
+                  <MODE-DECLARATIONS>
+                    <MODE-DECLARATION UUID="7a523687-20ec-49a3-bb0a-eca010cf9ab4">
+                      <SHORT-NAME>Off</SHORT-NAME>
+                      <VALUE>4</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="47336b46-d9a2-453c-9896-f148e25734b8">
+                      <SHORT-NAME>Startup</SHORT-NAME>
+                      <VALUE>0</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="7222f1a7-7458-4f22-870a-d0318bff6afa">
+                      <SHORT-NAME>Shutdown</SHORT-NAME>
+                      <VALUE>2</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="4e72ac7f-f2ae-4ba9-93d9-0132e9cb9600">
+                      <SHORT-NAME>Restart</SHORT-NAME>
+                      <VALUE>3</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="6b56b3b6-09cc-4d2d-915c-c13a7947e74a">
+                      <SHORT-NAME>Running</SHORT-NAME>
+                      <VALUE>1</VALUE>
+                    </MODE-DECLARATION>
+                  </MODE-DECLARATIONS>
+                </MODE-DECLARATION-GROUP>
+                <MODE-DECLARATION-GROUP UUID="635bb4fe-9852-454a-b217-c37b1f36594c">
+                  <SHORT-NAME>PCMachineMachineState</SHORT-NAME>
+                  <INITIAL-MODE-REF DEST="MODE-DECLARATION">/turtlesim/Machines/EM_states/PCMachineMachineState/Running</INITIAL-MODE-REF>
+                  <MODE-DECLARATIONS>
+                    <MODE-DECLARATION UUID="0117180f-846a-4280-8d0b-8357efd8d7ec">
+                      <SHORT-NAME>Running</SHORT-NAME>
+                      <VALUE>0</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="e17ed51f-5a7c-44b5-abf2-5b078ad008d2">
+                      <SHORT-NAME>Startup</SHORT-NAME>
+                      <VALUE>1</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="155cd10a-a182-4073-85cf-90828d43623a">
+                      <SHORT-NAME>Shutdown</SHORT-NAME>
+                      <VALUE>2</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="b69e6303-4d42-4438-96f7-73e072493308">
+                      <SHORT-NAME>Restart</SHORT-NAME>
+                      <VALUE>3</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION UUID="56fc8c9f-4810-4efb-9d48-62fd245255b9">
+                      <SHORT-NAME>Off</SHORT-NAME>
+                      <VALUE>4</VALUE>
+                    </MODE-DECLARATION>
+                  </MODE-DECLARATIONS>
+                </MODE-DECLARATION-GROUP>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="154b10a4-40da-4458-84d1-92ad32a604cf">
+              <SHORT-NAME>PCMachine</SHORT-NAME>
+              <ELEMENTS>
+                <MACHINE UUID="ed5d994c-011f-4540-96d2-5ab77ba4eac9">
+                  <SHORT-NAME>PCMachine</SHORT-NAME>
+                  <FUNCTION-GROUPS>
+                    <MODE-DECLARATION-GROUP-PROTOTYPE UUID="91cf55de-e209-45f0-ad5a-a47a5f93eb52">
+                      <SHORT-NAME>MachineState</SHORT-NAME>
+                      <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/turtlesim/Machines/EM_states/PCMachineMachineState</TYPE-TREF>
+                    </MODE-DECLARATION-GROUP-PROTOTYPE>
+                  </FUNCTION-GROUPS>
+                  <MACHINE-DESIGN-REF DEST="MACHINE-DESIGN">/turtlesim/Machines/PCMachineDesign</MACHINE-DESIGN-REF>
+                  <MODULE-INSTANTIATIONS>
+                    <OS-MODULE-INSTANTIATION UUID="7326ab5b-348a-4a9e-bd9e-0c15d6a45bc7">
+                      <SHORT-NAME>Os</SHORT-NAME>
+                      <RESOURCE-GROUPS>
+                        <RESOURCE-GROUP UUID="67d5f1fc-181e-4b51-a025-5b9c7520359a">
+                          <SHORT-NAME>ControlGroup</SHORT-NAME>
+                          <CPU-USAGE>50</CPU-USAGE>
+                          <MEM-USAGE>1024</MEM-USAGE>
+                        </RESOURCE-GROUP>
+                      </RESOURCE-GROUPS>
+                    </OS-MODULE-INSTANTIATION>
+                  </MODULE-INSTANTIATIONS>
+                  <PROCESSORS>
+                    <PROCESSOR UUID="95542367-88c3-4c8c-964a-f34d6d3f7980">
+                      <SHORT-NAME>Processor</SHORT-NAME>
+                      <CORES>
+                        <PROCESSOR-CORE UUID="a53fafd2-115c-4154-86d5-77d4813532bd">
+                          <SHORT-NAME>ProcessorCore0</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">0</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                          <CORE-ID>0</CORE-ID>
+                        </PROCESSOR-CORE>
+                        <PROCESSOR-CORE UUID="ed57f3db-bd33-4957-b064-6cfb7c64c536">
+                          <SHORT-NAME>ProcessorCore1</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">1</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                          <CORE-ID>1</CORE-ID>
+                        </PROCESSOR-CORE>
+                        <PROCESSOR-CORE UUID="b8b8a66b-5a71-4bf2-9148-ce2fd9491d16">
+                          <SHORT-NAME>ProcessorCore2</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">2</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                          <CORE-ID>2</CORE-ID>
+                        </PROCESSOR-CORE>
+                        <PROCESSOR-CORE UUID="1755ba8f-604b-4c31-923f-8d7c44e9e1a0">
+                          <SHORT-NAME>ProcessorCore3</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">3</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                          <CORE-ID>3</CORE-ID>
+                        </PROCESSOR-CORE>
+                      </CORES>
+                    </PROCESSOR>
+                  </PROCESSORS>
+                </MACHINE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="7fedcbc6-e01e-4176-96fc-8459ca0b4afa">
+              <SHORT-NAME>Raspi_Machine</SHORT-NAME>
+              <ELEMENTS>
+                <MACHINE UUID="a8995453-ab40-4ee9-a500-4c28e77f60f8">
+                  <SHORT-NAME>RaspiMachine</SHORT-NAME>
+                  <FUNCTION-GROUPS>
+                    <MODE-DECLARATION-GROUP-PROTOTYPE UUID="804b000d-61eb-4b1a-833a-dd0d0ad309a8">
+                      <SHORT-NAME>MachineState</SHORT-NAME>
+                      <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/turtlesim/Machines/EM_states/RaspiMachineMachineState</TYPE-TREF>
+                    </MODE-DECLARATION-GROUP-PROTOTYPE>
+                  </FUNCTION-GROUPS>
+                  <MACHINE-DESIGN-REF DEST="MACHINE-DESIGN">/turtlesim/Machines/PCMachineDesign</MACHINE-DESIGN-REF>
+                  <MODULE-INSTANTIATIONS>
+                    <OS-MODULE-INSTANTIATION UUID="3298994d-f56a-4ca1-ac09-7304e7f43514">
+                      <SHORT-NAME>Os</SHORT-NAME>
+                      <RESOURCE-GROUPS>
+                        <RESOURCE-GROUP UUID="13fd6f76-5a7a-4864-940e-7254c69dc9c1">
+                          <SHORT-NAME>ControlGroup</SHORT-NAME>
+                          <CPU-USAGE>50</CPU-USAGE>
+                          <MEM-USAGE>4096</MEM-USAGE>
+                        </RESOURCE-GROUP>
+                      </RESOURCE-GROUPS>
+                    </OS-MODULE-INSTANTIATION>
+                  </MODULE-INSTANTIATIONS>
+                  <PROCESSORS>
+                    <PROCESSOR UUID="708bcfe3-c8ef-488e-bc7b-625a5d696c28">
+                      <SHORT-NAME>Processor</SHORT-NAME>
+                      <CORES>
+                        <PROCESSOR-CORE UUID="11411e9b-fd1d-485c-9cd5-c20832103221">
+                          <SHORT-NAME>ProcessorCore0</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">0</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                        </PROCESSOR-CORE>
+                        <PROCESSOR-CORE UUID="eda4d1c6-da56-4b3d-ad21-7e2422fbd631">
+                          <SHORT-NAME>ProcessorCore1</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">1</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                        </PROCESSOR-CORE>
+                        <PROCESSOR-CORE UUID="918db18d-8a03-4370-b213-857520547e72">
+                          <SHORT-NAME>ProcessorCore2</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">2</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                        </PROCESSOR-CORE>
+                        <PROCESSOR-CORE UUID="f0b16367-2647-400e-a7e2-b46026a2016a">
+                          <SHORT-NAME>ProcessorCore3</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">3</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                        </PROCESSOR-CORE>
+                      </CORES>
+                    </PROCESSOR>
+                  </PROCESSORS>
+                </MACHINE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="c66be8e5-90fb-4b18-9ebc-b73d5ae5bdd7">
+          <SHORT-NAME>ServiceDesign</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="f587ede0-7967-4924-96dd-b5289761893a">
+              <SHORT-NAME>speed_control</SHORT-NAME>
+              <ELEMENTS>
+                <SERVICE-INTERFACE UUID="b61acbd3-8e4d-4101-9af0-01448da6056a">
+                  <SHORT-NAME>speed_control</SHORT-NAME>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>apns</SHORT-NAME>
+                      <SYMBOL>apns</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <EVENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="c8bceede-2766-4c20-a131-16fd190a8f44">
+                      <SHORT-NAME>LKA_speed</SHORT-NAME>
+                      <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/turtlesim/ServiceDesign/datatype/speedtype</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE UUID="bcd952ee-8f1e-48bf-8e69-f1f2ff368993">
+                      <SHORT-NAME>ToGoal_speed</SHORT-NAME>
+                      <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/turtlesim/ServiceDesign/datatype/speedtype</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </EVENTS>
+                </SERVICE-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="1685bcf4-f5f1-457d-8a00-5929e1472062">
+              <SHORT-NAME>datatype</SHORT-NAME>
+              <ELEMENTS>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE UUID="acc3672f-4eae-4351-9472-3d8c1a4b9a88">
+                  <SHORT-NAME>speedtype</SHORT-NAME>
+                  <CATEGORY>STRUCTURE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>apns</SHORT-NAME>
+                      <SYMBOL>apns</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <SUB-ELEMENTS>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="e5baba4d-e99e-48c4-abbe-34ebc5605511">
+                      <SHORT-NAME>l_vel</SHORT-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <TYPE-REFERENCE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/turtlesim/ServiceDesign/datatype/l_vel</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="b335f550-10a4-44d7-943f-dc0f4fe88ee8">
+                      <SHORT-NAME>a_vel</SHORT-NAME>
+                      <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                      <TYPE-REFERENCE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/turtlesim/ServiceDesign/datatype/a_vel</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  </SUB-ELEMENTS>
+                  <TYPE-EMITTER>TYPE_EMITTER_ARA</TYPE-EMITTER>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE UUID="c19995cb-5ad6-449f-afbd-bf5dc1e0f101">
+                  <SHORT-NAME>a_vel</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>apns</SHORT-NAME>
+                      <SYMBOL>apns</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-EMITTER>TYPE_EMITTER_ARA</TYPE-EMITTER>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/double</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE UUID="913cfa0b-7ed2-4dd2-beed-fad8d89f3176">
+                  <SHORT-NAME>l_vel</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>apns</SHORT-NAME>
+                      <SYMBOL>apns</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <TYPE-EMITTER>TYPE_EMITTER_ARA</TYPE-EMITTER>
+                  <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/double</TYPE-REFERENCE-REF>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE UUID="f202df55-e339-42a5-b6c9-9ab954eb8c2a">
+                  <SHORT-NAME>locationtype</SHORT-NAME>
+                  <CATEGORY>STRUCTURE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>apns</SHORT-NAME>
+                      <SYMBOL>apns</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <SUB-ELEMENTS>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="869b1107-6cf1-457b-af42-5068dfbef9f2">
+                      <SHORT-NAME>x</SHORT-NAME>
+                      <TYPE-REFERENCE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/double</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="38fae928-ca32-420c-8875-be4545875b81">
+                      <SHORT-NAME>y</SHORT-NAME>
+                      <TYPE-REFERENCE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/double</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="a49d5e37-41c5-4770-bc90-716b3bc1f655">
+                      <SHORT-NAME>theta</SHORT-NAME>
+                      <TYPE-REFERENCE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/double</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  </SUB-ELEMENTS>
+                  <TYPE-EMITTER>TYPE_EMITTER_ARA</TYPE-EMITTER>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+                <STD-CPP-IMPLEMENTATION-DATA-TYPE UUID="c5a75a9a-beb7-4465-8ceb-48f45488b4b8">
+                  <SHORT-NAME>lanetype</SHORT-NAME>
+                  <CATEGORY>STRUCTURE</CATEGORY>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>apns</SHORT-NAME>
+                      <SYMBOL>apns</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <SUB-ELEMENTS>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="536fa919-e681-49c0-a79f-5154aafa968d">
+                      <SHORT-NAME>k</SHORT-NAME>
+                      <TYPE-REFERENCE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/double</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    <CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="5cc617d7-8575-4f22-a78e-bf873df9c599">
+                      <SHORT-NAME>b</SHORT-NAME>
+                      <TYPE-REFERENCE>
+                        <TYPE-REFERENCE-REF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/AUTOSAR/StdTypes/double</TYPE-REFERENCE-REF>
+                      </TYPE-REFERENCE>
+                    </CPP-IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  </SUB-ELEMENTS>
+                  <TYPE-EMITTER>TYPE_EMITTER_ARA</TYPE-EMITTER>
+                </STD-CPP-IMPLEMENTATION-DATA-TYPE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="b754f13a-fe87-405d-b204-f3f378f2fbbb">
+              <SHORT-NAME>driving_information</SHORT-NAME>
+              <ELEMENTS>
+                <SERVICE-INTERFACE UUID="4e37c658-91de-4860-ae16-c393ac369e80">
+                  <SHORT-NAME>driving_information</SHORT-NAME>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>ns0</SHORT-NAME>
+                      <SYMBOL>apns</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <EVENTS>
+                    <VARIABLE-DATA-PROTOTYPE UUID="3532a098-c110-452d-b9e5-c1924aea1d3b">
+                      <SHORT-NAME>vehicle_speed</SHORT-NAME>
+                      <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/turtlesim/ServiceDesign/datatype/speedtype</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                    <VARIABLE-DATA-PROTOTYPE UUID="38ed874f-50c3-4777-886e-df340b2d4211">
+                      <SHORT-NAME>vehicle_position</SHORT-NAME>
+                      <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/turtlesim/ServiceDesign/datatype/locationtype</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </EVENTS>
+                </SERVICE-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="41165a11-e0dd-4388-aa05-24be2d343677">
+              <SHORT-NAME>external_elements</SHORT-NAME>
+              <ELEMENTS>
+                <SERVICE-INTERFACE UUID="ba035644-2c9a-4283-b0a0-3f6aa758b50a">
+                  <SHORT-NAME>external_elements</SHORT-NAME>
+                  <NAMESPACES>
+                    <SYMBOL-PROPS>
+                      <SHORT-NAME>apns</SHORT-NAME>
+                      <SYMBOL>apns</SYMBOL>
+                    </SYMBOL-PROPS>
+                  </NAMESPACES>
+                  <FIELDS>
+                    <FIELD UUID="000d953e-e11c-4687-9776-3686350ebce1">
+                      <SHORT-NAME>lane</SHORT-NAME>
+                      <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/turtlesim/ServiceDesign/datatype/lanetype</TYPE-TREF>
+                      <HAS-GETTER>true</HAS-GETTER>
+                      <HAS-NOTIFIER>true</HAS-NOTIFIER>
+                      <HAS-SETTER>true</HAS-SETTER>
+                    </FIELD>
+                    <FIELD UUID="4492f517-7247-4784-bddc-56cc5bcf7898">
+                      <SHORT-NAME>object</SHORT-NAME>
+                      <TYPE-TREF DEST="STD-CPP-IMPLEMENTATION-DATA-TYPE">/turtlesim/ServiceDesign/datatype/locationtype</TYPE-TREF>
+                      <HAS-GETTER>true</HAS-GETTER>
+                      <HAS-NOTIFIER>true</HAS-NOTIFIER>
+                      <HAS-SETTER>true</HAS-SETTER>
+                    </FIELD>
+                  </FIELDS>
+                </SERVICE-INTERFACE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="e0e9b523-5219-4965-85f8-2a283b92246b">
+          <SHORT-NAME>deployment</SHORT-NAME>
+          <ELEMENTS>
+            <PROCESS UUID="fba0631e-d731-4e7d-8ff6-654e9085a547">
+              <SHORT-NAME>ap_actuatorProcess</SHORT-NAME>
+              <EXECUTABLE-REF DEST="EXECUTABLE">/turtlesim/Application_design/AP_actuator_app/AP_actuator</EXECUTABLE-REF>
+              <PROCESS-STATE-MACHINE UUID="b9c1445d-3ed7-4ae0-9130-ee1cabe54753">
+                <SHORT-NAME>ModeDeclarationGroupPrototype</SHORT-NAME>
+                <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/turtlesim/deployment/ProcessStates</TYPE-TREF>
+              </PROCESS-STATE-MACHINE>
+              <STATE-DEPENDENT-STARTUP-CONFIGS>
+                <STATE-DEPENDENT-STARTUP-CONFIG>
+                  <FUNCTION-GROUP-STATE-IREFS>
+                    <FUNCTION-GROUP-STATE-IREF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/turtlesim/Machines/PCMachine/PCMachine/MachineState</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/turtlesim/Machines/EM_states/PCMachineMachineState/Running</TARGET-MODE-DECLARATION-REF>
+                    </FUNCTION-GROUP-STATE-IREF>
+                  </FUNCTION-GROUP-STATE-IREFS>
+                  <STARTUP-CONFIG-REF DEST="STARTUP-CONFIG">/turtlesim/Application_design/StartupConfigSet/apactuatorStartupConfig</STARTUP-CONFIG-REF>
+                </STATE-DEPENDENT-STARTUP-CONFIG>
+              </STATE-DEPENDENT-STARTUP-CONFIGS>
+            </PROCESS>
+            <PROCESS UUID="8327b187-5014-40c1-9f3c-9d4d4ec479cd">
+              <SHORT-NAME>AP_controllerProcess</SHORT-NAME>
+              <EXECUTABLE-REF DEST="EXECUTABLE">/turtlesim/Application_design/AP_controller_app/AP_controller</EXECUTABLE-REF>
+              <PROCESS-STATE-MACHINE UUID="1fd35c6b-317a-4c0f-9dcc-87eac3e10cca">
+                <SHORT-NAME>ModeDeclarationGroupPrototype</SHORT-NAME>
+                <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/turtlesim/deployment/ProcessStates</TYPE-TREF>
+              </PROCESS-STATE-MACHINE>
+              <STATE-DEPENDENT-STARTUP-CONFIGS>
+                <STATE-DEPENDENT-STARTUP-CONFIG>
+                  <FUNCTION-GROUP-STATE-IREFS>
+                    <FUNCTION-GROUP-STATE-IREF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/turtlesim/Machines/Raspi_Machine/RaspiMachine/MachineState</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/turtlesim/Machines/EM_states/RaspiMachineMachineState/Running</TARGET-MODE-DECLARATION-REF>
+                    </FUNCTION-GROUP-STATE-IREF>
+                  </FUNCTION-GROUP-STATE-IREFS>
+                  <STARTUP-CONFIG-REF DEST="STARTUP-CONFIG">/turtlesim/Application_design/StartupConfigSet/apcontrollerStartupConfig</STARTUP-CONFIG-REF>
+                </STATE-DEPENDENT-STARTUP-CONFIG>
+              </STATE-DEPENDENT-STARTUP-CONFIGS>
+            </PROCESS>
+          </ELEMENTS>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="b1b14cf3-7012-4a47-88cd-e073bfdff89f">
+              <SHORT-NAME>Mapping</SHORT-NAME>
+              <ELEMENTS>
+                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="d40ca158-686d-4a2f-b971-2900bcf6d714">
+                  <SHORT-NAME>PortMappingRequiredSomeipLKA</SHORT-NAME>
+                  <PORT-PROTOTYPE-IREF>
+                    <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/AP_actuator_app/AP_actuator/actuator</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                    <TARGET-PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/turtlesim/Application_design/AP_actuator_app/actuator/speed_control</TARGET-PORT-PROTOTYPE-REF>
+                  </PORT-PROTOTYPE-IREF>
+                  <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/ap_actuatorProcess</PROCESS-REF>
+                  <SERVICE-INSTANCE-REF DEST="REQUIRED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Required/RequiredSomeipLKA</SERVICE-INSTANCE-REF>
+                </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="43ace852-148f-400f-a5b5-fe37dd7a615e">
+                  <SHORT-NAME>MachineMappingRequiredSomeipLKA</SHORT-NAME>
+                  <COMMUNICATION-CONNECTOR-REF DEST="ETHERNET-COMMUNICATION-CONNECTOR">/turtlesim/Machines/PCMachineDesign/Networkendpoint</COMMUNICATION-CONNECTOR-REF>
+                  <SERVICE-INSTANCE-REFS>
+                    <SERVICE-INSTANCE-REF DEST="REQUIRED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Required/RequiredSomeipLKA</SERVICE-INSTANCE-REF>
+                  </SERVICE-INSTANCE-REFS>
+                  <IPV-4-MULTICAST-IP-ADDRESS/>
+                  <UDP-PORT>40000</UDP-PORT>
+                </SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
+                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="145adbff-1e64-4290-ab16-d992570fe224">
+                  <SHORT-NAME>PortMappingProvidedSomeipLKA</SHORT-NAME>
+                  <PORT-PROTOTYPE-IREF>
+                    <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/AP_controller_app/AP_controller/controller</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                    <TARGET-PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/turtlesim/Application_design/AP_controller_app/controller/speed_control</TARGET-PORT-PROTOTYPE-REF>
+                  </PORT-PROTOTYPE-IREF>
+                  <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/AP_controllerProcess</PROCESS-REF>
+                  <SERVICE-INSTANCE-REF DEST="PROVIDED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Provided/ProvidedSomeipLKA</SERVICE-INSTANCE-REF>
+                </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="a73e75ba-aef2-40d7-a202-885785bcd536">
+                  <SHORT-NAME>MachineMappingProvidedSomeipLKA</SHORT-NAME>
+                  <COMMUNICATION-CONNECTOR-REF DEST="ETHERNET-COMMUNICATION-CONNECTOR">/turtlesim/Machines/raspiMachineDesign/Networkendpointraspi</COMMUNICATION-CONNECTOR-REF>
+                  <SERVICE-INSTANCE-REFS>
+                    <SERVICE-INSTANCE-REF DEST="PROVIDED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Provided/ProvidedSomeipLKA</SERVICE-INSTANCE-REF>
+                  </SERVICE-INSTANCE-REFS>
+                  <IPV-4-MULTICAST-IP-ADDRESS/>
+                  <UDP-PORT>40001</UDP-PORT>
+                </SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
+                <PROCESS-TO-MACHINE-MAPPING-SET UUID="3599feeb-1bed-4d97-9b3d-d1bbf03c677a">
+                  <SHORT-NAME>ProcessToMachineMappingSet</SHORT-NAME>
+                  <PROCESS-TO-MACHINE-MAPPINGS>
+                    <PROCESS-TO-MACHINE-MAPPING UUID="5871315b-85b5-4c79-b1ce-257d640ffe21">
+                      <SHORT-NAME>actuatorToMachineMapping</SHORT-NAME>
+                      <MACHINE-REF DEST="MACHINE">/turtlesim/Machines/PCMachine/PCMachine</MACHINE-REF>
+                      <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/ap_actuatorProcess</PROCESS-REF>
+                      <SHALL-RUN-ON-REFS>
+                        <SHALL-RUN-ON-REF DEST="PROCESSOR-CORE">/turtlesim/Machines/PCMachine/PCMachine/Processor/ProcessorCore0</SHALL-RUN-ON-REF>
+                      </SHALL-RUN-ON-REFS>
+                    </PROCESS-TO-MACHINE-MAPPING>
+                    <PROCESS-TO-MACHINE-MAPPING UUID="7ab08b23-8034-475b-b8c5-3a7bcd786b13">
+                      <SHORT-NAME>rslocatorToMachineMapping</SHORT-NAME>
+                      <MACHINE-REF DEST="MACHINE">/turtlesim/Machines/PCMachine/PCMachine</MACHINE-REF>
+                      <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/ros_locatior</PROCESS-REF>
+                      <SHALL-NOT-RUN-ON-REFS>
+                        <SHALL-NOT-RUN-ON-REF DEST="PROCESSOR-CORE">/turtlesim/Machines/PCMachine/PCMachine/Processor/ProcessorCore0</SHALL-NOT-RUN-ON-REF>
+                      </SHALL-NOT-RUN-ON-REFS>
+                    </PROCESS-TO-MACHINE-MAPPING>
+                    <PROCESS-TO-MACHINE-MAPPING UUID="a8f53484-bd81-4e08-8a91-3063915ee97c">
+                      <SHORT-NAME>convverterToMachineMapping</SHORT-NAME>
+                      <MACHINE-REF DEST="MACHINE">/turtlesim/Machines/PCMachine/PCMachine</MACHINE-REF>
+                      <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/rosap_exeProcess</PROCESS-REF>
+                      <SHALL-NOT-RUN-ON-REFS>
+                        <SHALL-NOT-RUN-ON-REF DEST="PROCESSOR-CORE">/turtlesim/Machines/PCMachine/PCMachine/Processor/ProcessorCore0</SHALL-NOT-RUN-ON-REF>
+                      </SHALL-NOT-RUN-ON-REFS>
+                    </PROCESS-TO-MACHINE-MAPPING>
+                    <PROCESS-TO-MACHINE-MAPPING UUID="f9739fe4-fe26-4f67-896c-45492ac044fb">
+                      <SHORT-NAME>apcontrollerToMachineMapping</SHORT-NAME>
+                      <MACHINE-REF DEST="MACHINE">/turtlesim/Machines/Raspi_Machine/RaspiMachine</MACHINE-REF>
+                      <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/AP_controllerProcess</PROCESS-REF>
+                      <SHALL-RUN-ON-REFS>
+                        <SHALL-RUN-ON-REF DEST="PROCESSOR-CORE">/turtlesim/Machines/Raspi_Machine/RaspiMachine/Processor/ProcessorCore0</SHALL-RUN-ON-REF>
+                      </SHALL-RUN-ON-REFS>
+                    </PROCESS-TO-MACHINE-MAPPING>
+                  </PROCESS-TO-MACHINE-MAPPINGS>
+                </PROCESS-TO-MACHINE-MAPPING-SET>
+                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="79d61667-3258-4edb-aa05-7684bdab884c">
+                  <SHORT-NAME>PortMappingProvidedSomeipSpeedControl</SHORT-NAME>
+                  <PORT-PROTOTYPE-IREF>
+                    <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/rosap_exe/rosap_exe/cswc</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                    <TARGET-PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/turtlesim/Application_design/rosap_exe/rosap_converter/PPort_speed_control</TARGET-PORT-PROTOTYPE-REF>
+                  </PORT-PROTOTYPE-IREF>
+                  <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/rosap_exeProcess</PROCESS-REF>
+                  <SERVICE-INSTANCE-REF DEST="PROVIDED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Provided/ProvidedSomeipSpeedControl</SERVICE-INSTANCE-REF>
+                </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="2633d00e-4516-487e-b19e-4c9776f78329">
+                  <SHORT-NAME>PortMappingProvidedSomeipdriving_information</SHORT-NAME>
+                  <PORT-PROTOTYPE-IREF>
+                    <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/AP_actuator_app/AP_actuator/actuator</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                    <TARGET-PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/turtlesim/Application_design/AP_actuator_app/actuator/driving_information</TARGET-PORT-PROTOTYPE-REF>
+                  </PORT-PROTOTYPE-IREF>
+                  <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/ap_actuatorProcess</PROCESS-REF>
+                  <SERVICE-INSTANCE-REF DEST="PROVIDED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Provided/ProvidedSomeipdriving_information</SERVICE-INSTANCE-REF>
+                </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="dc28a505-bec6-488c-bd19-20130017ba45">
+          <SHORT-NAME>Someip</SHORT-NAME>
+          <ELEMENTS>
+            <SOMEIP-SERVICE-INTERFACE-DEPLOYMENT UUID="a11398de-a2cc-439f-acdb-e73207e09e3b">
+              <SHORT-NAME>SomeipSpeedControl</SHORT-NAME>
+              <EVENT-DEPLOYMENTS>
+                <SOMEIP-EVENT-DEPLOYMENT UUID="69e293a9-0b96-4a8e-a365-9eaccc954f89">
+                  <SHORT-NAME>someip_lka_speed</SHORT-NAME>
+                  <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/turtlesim/ServiceDesign/speed_control/speed_control/LKA_speed</EVENT-REF>
+                  <EVENT-ID>45677</EVENT-ID>
+                  <TRANSPORT-PROTOCOL>UDP</TRANSPORT-PROTOCOL>
+                </SOMEIP-EVENT-DEPLOYMENT>
+                <SOMEIP-EVENT-DEPLOYMENT UUID="52e8bddc-1f8b-493a-bfab-daf49b61de98">
+                  <SHORT-NAME>Someip_ToGoal_speed</SHORT-NAME>
+                  <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/turtlesim/ServiceDesign/speed_control/speed_control/ToGoal_speed</EVENT-REF>
+                  <EVENT-ID>45678</EVENT-ID>
+                  <TRANSPORT-PROTOCOL>UDP</TRANSPORT-PROTOCOL>
+                </SOMEIP-EVENT-DEPLOYMENT>
+              </EVENT-DEPLOYMENTS>
+              <SERVICE-INTERFACE-REF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/speed_control/speed_control</SERVICE-INTERFACE-REF>
+              <EVENT-GROUPS>
+                <SOMEIP-EVENT-GROUP UUID="cecc6941-4b3b-4fc1-987e-1b383a8fb5da">
+                  <SHORT-NAME>SomeipEventGroup</SHORT-NAME>
+                  <EVENT-GROUP-ID>1</EVENT-GROUP-ID>
+                  <EVENT-REFS>
+                    <EVENT-REF DEST="SOMEIP-EVENT-DEPLOYMENT">/turtlesim/Someip/SomeipSpeedControl/someip_lka_speed</EVENT-REF>
+                    <EVENT-REF DEST="SOMEIP-EVENT-DEPLOYMENT">/turtlesim/Someip/SomeipSpeedControl/Someip_ToGoal_speed</EVENT-REF>
+                  </EVENT-REFS>
+                </SOMEIP-EVENT-GROUP>
+              </EVENT-GROUPS>
+              <SERVICE-INTERFACE-ID>1401</SERVICE-INTERFACE-ID>
+              <SERVICE-INTERFACE-VERSION>
+                <MAJOR-VERSION>1</MAJOR-VERSION>
+                <MINOR-VERSION>0</MINOR-VERSION>
+              </SERVICE-INTERFACE-VERSION>
+            </SOMEIP-SERVICE-INTERFACE-DEPLOYMENT>
+            <SOMEIP-SD-CLIENT-EVENT-GROUP-TIMING-CONFIG UUID="d7bf942d-ee83-4b6d-bf6d-425cf955c34d">
+              <SHORT-NAME>SomeipSdClientEventGroupTimingConfig</SHORT-NAME>
+              <REQUEST-RESPONSE-DELAY>
+                <MAX-VALUE>0</MAX-VALUE>
+                <MIN-VALUE>0</MIN-VALUE>
+              </REQUEST-RESPONSE-DELAY>
+              <TIME-TO-LIVE>5</TIME-TO-LIVE>
+            </SOMEIP-SD-CLIENT-EVENT-GROUP-TIMING-CONFIG>
+            <SOMEIP-SERVICE-INTERFACE-DEPLOYMENT UUID="562d978f-86f9-430d-9a19-587d9843c828">
+              <SHORT-NAME>Someipdriving_information</SHORT-NAME>
+              <EVENT-DEPLOYMENTS>
+                <SOMEIP-EVENT-DEPLOYMENT UUID="674eb285-c26e-4a5a-884e-3f06a9345ec8">
+                  <SHORT-NAME>vehicle_speed</SHORT-NAME>
+                  <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/turtlesim/ServiceDesign/driving_information/driving_information/vehicle_speed</EVENT-REF>
+                  <EVENT-ID>32769</EVENT-ID>
+                  <TRANSPORT-PROTOCOL>UDP</TRANSPORT-PROTOCOL>
+                </SOMEIP-EVENT-DEPLOYMENT>
+                <SOMEIP-EVENT-DEPLOYMENT UUID="d40d4ead-9ba7-4cdd-a4e4-66c2b6cd8ae5">
+                  <SHORT-NAME>vehicle_position</SHORT-NAME>
+                  <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/turtlesim/ServiceDesign/driving_information/driving_information/vehicle_position</EVENT-REF>
+                  <EVENT-ID>32770</EVENT-ID>
+                  <TRANSPORT-PROTOCOL>UDP</TRANSPORT-PROTOCOL>
+                </SOMEIP-EVENT-DEPLOYMENT>
+              </EVENT-DEPLOYMENTS>
+              <SERVICE-INTERFACE-REF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/driving_information/driving_information</SERVICE-INTERFACE-REF>
+              <EVENT-GROUPS>
+                <SOMEIP-EVENT-GROUP UUID="b7f050b0-0056-40ef-82ae-e2f182b55e6f">
+                  <SHORT-NAME>SomeipEventGroup</SHORT-NAME>
+                  <EVENT-GROUP-ID>1</EVENT-GROUP-ID>
+                  <EVENT-REFS>
+                    <EVENT-REF DEST="SOMEIP-EVENT-DEPLOYMENT">/turtlesim/Someip/Someipdriving_information/vehicle_speed</EVENT-REF>
+                    <EVENT-REF DEST="SOMEIP-EVENT-DEPLOYMENT">/turtlesim/Someip/Someipdriving_information/vehicle_position</EVENT-REF>
+                  </EVENT-REFS>
+                </SOMEIP-EVENT-GROUP>
+              </EVENT-GROUPS>
+              <SERVICE-INTERFACE-ID>1402</SERVICE-INTERFACE-ID>
+              <SERVICE-INTERFACE-VERSION>
+                <MAJOR-VERSION>1</MAJOR-VERSION>
+                <MINOR-VERSION>0</MINOR-VERSION>
+              </SERVICE-INTERFACE-VERSION>
+            </SOMEIP-SERVICE-INTERFACE-DEPLOYMENT>
+          </ELEMENTS>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="e155c365-96d1-4a4c-8889-cbb9c46a95ff">
+              <SHORT-NAME>Provided</SHORT-NAME>
+              <ELEMENTS>
+                <PROVIDED-SOMEIP-SERVICE-INSTANCE UUID="41a29fb1-a7c6-43b3-a4a5-9aeb382c5963">
+                  <SHORT-NAME>ProvidedSomeipLKA</SHORT-NAME>
+                  <SERVICE-INTERFACE-REF DEST="SOMEIP-SERVICE-INTERFACE-DEPLOYMENT">/turtlesim/Someip/SomeipSpeedControl</SERVICE-INTERFACE-REF>
+                  <PROVIDED-EVENT-GROUPS>
+                    <SOMEIP-PROVIDED-EVENT-GROUP UUID="7826f463-ba33-4074-828d-e4bef42f6293">
+                      <SHORT-NAME>SomeipEventGroup</SHORT-NAME>
+                      <EVENT-GROUP-REF DEST="SOMEIP-EVENT-GROUP">/turtlesim/Someip/SomeipSpeedControl/SomeipEventGroup</EVENT-GROUP-REF>
+                      <MULTICAST-THRESHOLD>0</MULTICAST-THRESHOLD>
+                    </SOMEIP-PROVIDED-EVENT-GROUP>
+                  </PROVIDED-EVENT-GROUPS>
+                  <SD-SERVER-CONFIG-REF DEST="SOMEIP-SD-SERVER-SERVICE-INSTANCE-CONFIG">/turtlesim/Someip/Provided/SomeipSdServerServiceInstanceConfigLKA</SD-SERVER-CONFIG-REF>
+                  <SERVICE-INSTANCE-ID>1</SERVICE-INSTANCE-ID>
+                </PROVIDED-SOMEIP-SERVICE-INSTANCE>
+                <SOMEIP-SD-SERVER-SERVICE-INSTANCE-CONFIG UUID="d07c4af8-bbfc-4348-addf-d313d930fdc4">
+                  <SHORT-NAME>SomeipSdServerServiceInstanceConfigLKA</SHORT-NAME>
+                  <INITIAL-OFFER-BEHAVIOR>
+                    <INITIAL-DELAY-MAX-VALUE>0.1</INITIAL-DELAY-MAX-VALUE>
+                    <INITIAL-DELAY-MIN-VALUE>0.01</INITIAL-DELAY-MIN-VALUE>
+                    <INITIAL-REPETITIONS-BASE-DELAY>0.2</INITIAL-REPETITIONS-BASE-DELAY>
+                    <INITIAL-REPETITIONS-MAX>10</INITIAL-REPETITIONS-MAX>
+                  </INITIAL-OFFER-BEHAVIOR>
+                  <OFFER-CYCLIC-DELAY>4</OFFER-CYCLIC-DELAY>
+                  <REQUEST-RESPONSE-DELAY>
+                    <MAX-VALUE>1.5</MAX-VALUE>
+                    <MIN-VALUE>1.5</MIN-VALUE>
+                  </REQUEST-RESPONSE-DELAY>
+                  <SERVICE-OFFER-TIME-TO-LIVE>3</SERVICE-OFFER-TIME-TO-LIVE>
+                </SOMEIP-SD-SERVER-SERVICE-INSTANCE-CONFIG>
+                <PROVIDED-SOMEIP-SERVICE-INSTANCE UUID="b1304421-8eb3-4308-84b6-fa655817e2da">
+                  <SHORT-NAME>ProvidedSomeipdriving_information</SHORT-NAME>
+                  <SERVICE-INTERFACE-REF DEST="SOMEIP-SERVICE-INTERFACE-DEPLOYMENT">/turtlesim/Someip/Someipdriving_information</SERVICE-INTERFACE-REF>
+                  <PROVIDED-EVENT-GROUPS>
+                    <SOMEIP-PROVIDED-EVENT-GROUP UUID="4df6b880-21b0-4d4d-be66-ad04a800fce5">
+                      <SHORT-NAME>SomeipEventGroup</SHORT-NAME>
+                      <EVENT-GROUP-REF DEST="SOMEIP-EVENT-GROUP">/turtlesim/Someip/Someipdriving_information/SomeipEventGroup</EVENT-GROUP-REF>
+                      <MULTICAST-THRESHOLD>0</MULTICAST-THRESHOLD>
+                    </SOMEIP-PROVIDED-EVENT-GROUP>
+                  </PROVIDED-EVENT-GROUPS>
+                  <SD-SERVER-CONFIG-REF DEST="SOMEIP-SD-SERVER-SERVICE-INSTANCE-CONFIG">/turtlesim/Someip/Provided/SomeipSdServerServiceInstanceConfigdriving_information</SD-SERVER-CONFIG-REF>
+                  <SERVICE-INSTANCE-ID>3</SERVICE-INSTANCE-ID>
+                </PROVIDED-SOMEIP-SERVICE-INSTANCE>
+                <SOMEIP-SD-SERVER-SERVICE-INSTANCE-CONFIG UUID="f307b57c-3425-43a2-be22-16a4c39b3239">
+                  <SHORT-NAME>SomeipSdServerServiceInstanceConfigdriving_information</SHORT-NAME>
+                  <INITIAL-OFFER-BEHAVIOR>
+                    <INITIAL-DELAY-MAX-VALUE>0.1</INITIAL-DELAY-MAX-VALUE>
+                    <INITIAL-DELAY-MIN-VALUE>0.01</INITIAL-DELAY-MIN-VALUE>
+                    <INITIAL-REPETITIONS-BASE-DELAY>0.2</INITIAL-REPETITIONS-BASE-DELAY>
+                    <INITIAL-REPETITIONS-MAX>10</INITIAL-REPETITIONS-MAX>
+                  </INITIAL-OFFER-BEHAVIOR>
+                  <OFFER-CYCLIC-DELAY>4</OFFER-CYCLIC-DELAY>
+                  <REQUEST-RESPONSE-DELAY>
+                    <MAX-VALUE>1.5</MAX-VALUE>
+                    <MIN-VALUE>1.5</MIN-VALUE>
+                  </REQUEST-RESPONSE-DELAY>
+                  <SERVICE-OFFER-TIME-TO-LIVE>3</SERVICE-OFFER-TIME-TO-LIVE>
+                </SOMEIP-SD-SERVER-SERVICE-INSTANCE-CONFIG>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="7961168e-2789-4043-8869-9caee69c9b1a">
+              <SHORT-NAME>Required</SHORT-NAME>
+              <ELEMENTS>
+                <REQUIRED-SOMEIP-SERVICE-INSTANCE UUID="a959688c-c65b-4ab7-85af-19837a59b0a9">
+                  <SHORT-NAME>RequiredSomeipLKA</SHORT-NAME>
+                  <SERVICE-INTERFACE-REF DEST="SOMEIP-SERVICE-INTERFACE-DEPLOYMENT">/turtlesim/Someip/SomeipSpeedControl</SERVICE-INTERFACE-REF>
+                  <REQUIRED-EVENT-GROUPS>
+                    <SOMEIP-REQUIRED-EVENT-GROUP>
+                      <SHORT-NAME>SomeipEventGroup</SHORT-NAME>
+                      <EVENT-GROUP-REF DEST="SOMEIP-EVENT-GROUP">/turtlesim/Someip/SomeipSpeedControl/SomeipEventGroup</EVENT-GROUP-REF>
+                      <SD-CLIENT-EVENT-GROUP-TIMING-CONFIG-REF DEST="SOMEIP-SD-CLIENT-EVENT-GROUP-TIMING-CONFIG">/turtlesim/Someip/SomeipSdClientEventGroupTimingConfig</SD-CLIENT-EVENT-GROUP-TIMING-CONFIG-REF>
+                    </SOMEIP-REQUIRED-EVENT-GROUP>
+                  </REQUIRED-EVENT-GROUPS>
+                  <REQUIRED-MINOR-VERSION>ANY</REQUIRED-MINOR-VERSION>
+                  <REQUIRED-SERVICE-INSTANCE-ID>1</REQUIRED-SERVICE-INSTANCE-ID>
+                  <SD-CLIENT-CONFIG-REF DEST="SOMEIP-SD-CLIENT-SERVICE-INSTANCE-CONFIG">/turtlesim/Someip/Required/SomeipSdClientServiceInstanceConfigLKA</SD-CLIENT-CONFIG-REF>
+                </REQUIRED-SOMEIP-SERVICE-INSTANCE>
+                <SOMEIP-SD-CLIENT-SERVICE-INSTANCE-CONFIG UUID="cf0824a7-5c3a-4c7a-b489-bd6a64938540">
+                  <SHORT-NAME>SomeipSdClientServiceInstanceConfigLKA</SHORT-NAME>
+                  <INITIAL-FIND-BEHAVIOR>
+                    <INITIAL-DELAY-MAX-VALUE>0.1</INITIAL-DELAY-MAX-VALUE>
+                    <INITIAL-DELAY-MIN-VALUE>0.01</INITIAL-DELAY-MIN-VALUE>
+                    <INITIAL-REPETITIONS-BASE-DELAY>0.2</INITIAL-REPETITIONS-BASE-DELAY>
+                    <INITIAL-REPETITIONS-MAX>3</INITIAL-REPETITIONS-MAX>
+                  </INITIAL-FIND-BEHAVIOR>
+                  <SERVICE-FIND-TIME-TO-LIVE>3</SERVICE-FIND-TIME-TO-LIVE>
+                </SOMEIP-SD-CLIENT-SERVICE-INSTANCE-CONFIG>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

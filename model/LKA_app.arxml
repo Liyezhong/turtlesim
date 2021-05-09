@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="75d737c8-84f5-46c4-a92f-d52262b208cb">
+          <SHORT-NAME>Application_design</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="d2fed41c-5aec-400a-8bbf-5280ec23a132">
+              <SHORT-NAME>rosap_exe</SHORT-NAME>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

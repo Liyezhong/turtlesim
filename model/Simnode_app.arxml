@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="75d737c8-84f5-46c4-a92f-d52262b208cb">
+          <SHORT-NAME>Application_design</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="52f825cd-3780-4623-a964-40922061c0d5">
+              <SHORT-NAME>ROS_locator</SHORT-NAME>
+              <ELEMENTS>
+                <ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE UUID="849a5191-3564-434d-8ad3-4a1a5a91c89b">
+                  <SHORT-NAME>ROS_locator_swc</SHORT-NAME>
+                </ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE>
+                <EXECUTABLE UUID="e7ffccd3-35da-4c2b-8147-4414e4323f8b">
+                  <SHORT-NAME>ROS_locator</SHORT-NAME>
+                  <ROOT-SW-COMPONENT-PROTOTYPE UUID="307a053e-d0b9-4949-ad33-5a4d426e57c3">
+                    <SHORT-NAME>RootSwComponentPrototype</SHORT-NAME>
+                    <APPLICATION-TYPE-TREF DEST="ADAPTIVE-APPLICATION-SW-COMPONENT-TYPE">/turtlesim/Application_design/ROS_locator/ROS_locator_swc</APPLICATION-TYPE-TREF>
+                  </ROOT-SW-COMPONENT-PROTOTYPE>
+                </EXECUTABLE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Settings>
+    <Settings Name="CFG5_GUI_SETTING">
+        <Settings Name="com.vector.cfg.gui.core.ctrl.simple.ReferenceGridPart">
+            <Setting Value="0,1," Name="nattable.BODY.columnIndexOrder"/>
+            <Setting Value="0" Name="nattable.BODY.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.BODY.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0:126,1:459," Name="nattable.BODY.columnWidth.sizes"/>
+            <Setting Value="0" Name="nattable.COLUMN_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.COLUMN_HEADER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.CORNER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.CORNER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="0" Name="nattable.ROW_HEADER.columnWidth.defaultMinSize"/>
+            <Setting Value="false" Name="nattable.ROW_HEADER.columnWidth.distributeRemainingSpace"/>
+            <Setting Value="ASC" Name="nattable.sortDirections"/>
+            <Setting Value="0" Name="nattable.sortIndexes"/>
+        </Settings>
+    </Settings>
+    <Settings Name="com.vector.cfg.consistency.internal.executer.BackgroundValidationExecuter">
+        <Setting Value="rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVz&#xA;aG9sZHhwP0AAAAAAAAx3CAAAABAAAAAGdABgY29tLnZlY3Rvci5jZmcudmFsaWRhdGlvbi5kb21h&#xA;aW5ydWxlcy5jb20uYW1zci5pbXBsLnNlcnZpY2VpbnN0YW5jZXMuRXZlbnRHcm91cE1pc3NpbmdW&#xA;YWxpZGF0aW9uc3IADmphdmEubGFuZy5Mb25nO4vkkMyPI98CAAFKAAV2YWx1ZXhyABBqYXZhLmxh&#xA;bmcuTnVtYmVyhqyVHQuU4IsCAAB4cAAAAAADAAAAdABoY29tLnZlY3Rvci5jZmcudmFsaWRhdGlv&#xA;bi5kb21haW5ydWxlcy5jb20uYW1zci5pbXBsLnNlcnZpY2VpbnN0YW5jZWNvbmZpZy5Jbml0aWFs&#xA;RGVsYXlNaW5WYWx1ZVZhbGlkYXRpb25zcQB+AAMAAAAAAQAAAHQAXWNvbS52ZWN0b3IuY2ZnLnZh&#xA;bGlkYXRpb24uZG9tYWlucnVsZXMuY29tLmFtc3IuaW1wbC5zZXJ2aWNlaW5zdGFuY2VzLlNkU2Vy&#xA;dmVyQ29uZmlnVmFsaWRhdGlvbnNxAH4AAwAAAAABAAAAdABoY29tLnZlY3Rvci5jZmcudmFsaWRh&#xA;dGlvbi5kb21haW5ydWxlcy5jb20uYW1zci5pbXBsLnNlcnZpY2VpbnN0YW5jZWNvbmZpZy5Jbml0&#xA;aWFsRGVsYXlNYXhWYWx1ZVZhbGlkYXRpb25zcQB+AAMAAAAAAQAAAHQAZWNvbS52ZWN0b3IuY2Zn&#xA;LnZhbGlkYXRpb24uZG9tYWlucnVsZXMuY29tLmFtc3IuaW1wbC5zZXJ2aWNlaW5zdGFuY2VzLlNl&#xA;cnZpY2VJbnN0YW5jZUlkUmFuZ2VWYWxpZGF0aW9uc3EAfgADAAAAAAEAAAB0AGxjb20udmVjdG9y&#xA;LmNmZy52YWxpZGF0aW9uLmRvbWFpbnJ1bGVzLmNvbS5hbXNyLmltcGwuc2VydmljZWluc3RhbmNl&#xA;cy5TYW1lRXZlbnRHcm91cFJlZmVyZW5jZWRUd2ljZVZhbGlkYXRpb25zcQB+AAMAAAAAAQAAAHg=" Name="ValidationRuleExecutionTimes"/>
+    </Settings>
+</Settings>

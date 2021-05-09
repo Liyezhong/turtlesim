@@ -1,0 +1,8 @@
+{
+    "applications": [
+        "../rosap_exe/etc/someip_config.json",
+        "../AP_actuator/etc/someip_config.json",
+        "../AP_controller/etc/someip_config.json",
+        "../rostry/etc/someip_config.json"
+    ]
+}

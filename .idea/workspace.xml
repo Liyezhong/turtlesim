@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BuildServerSettings">
+    <option name="SERVER_URL" value="http://buildserver" />
+    <treeState key="project">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="turtlesim" targetName="roscpp_generate_messages_eus" />
+      <config projectName="turtlesim" targetName="_turtlesim_generate_messages_check_deps_Color" />
+      <config projectName="turtlesim" targetName="turtlesim_generate_messages_lisp" />
+      <config projectName="turtlesim" targetName="std_msgs_generate_messages_lisp" />
+      <config projectName="turtlesim" targetName="turtlesim_generate_messages_py" />
+      <config projectName="turtlesim" targetName="_turtlesim_generate_messages_check_deps_TeleportRelative" />
+      <config projectName="turtlesim" targetName="turtlesim_genpy" />
+      <config projectName="turtlesim" targetName="turtlesim_generate_messages_nodejs" />
+      <config projectName="turtlesim" targetName="turtlesim_generate_messages_cpp" />
+      <config projectName="turtlesim" targetName="geometry_msgs_generate_messages_lisp" />
+      <config projectName="turtlesim" targetName="roscpp_generate_messages_py" />
+      <config projectName="turtlesim" targetName="AP_controller" />
+      <config projectName="turtlesim" targetName="turtlesim_generate_messages" />
+      <config projectName="turtlesim" targetName="geometry_msgs_generate_messages_nodejs" />
+      <config projectName="turtlesim" targetName="std_srvs_generate_messages_nodejs" />
+      <config projectName="turtlesim" targetName="geometry_msgs_generate_messages_py" />
+      <config projectName="turtlesim" targetName="turtlesim_genlisp" />
+      <config projectName="turtlesim" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="turtlesim" targetName="std_srvs_generate_messages_eus" />
+      <config projectName="turtlesim" targetName="std_msgs_generate_messages_py" />
+      <config projectName="turtlesim" targetName="src-gen" />
+      <config projectName="turtlesim" targetName="src-gen-turtlesim" />
+      <config projectName="turtlesim" targetName="run_tests" />
+      <config projectName="turtlesim" targetName="gtest_main" />
+      <config projectName="turtlesim" targetName="_turtlesim_generate_messages_check_deps_Spawn" />
+      <config projectName="turtlesim" targetName="roscpp_generate_messages_nodejs" />
+      <config projectName="turtlesim" targetName="std_msgs_generate_messages_nodejs" />
+      <config projectName="turtlesim" targetName="std_srvs_generate_messages_lisp" />
+      <config projectName="turtlesim" targetName="rosgraph_msgs_generate_messages_eus" />
+      <config projectName="turtlesim" targetName="rosgraph_msgs_generate_messages_py" />
+      <config projectName="turtlesim" targetName="std_srvs_generate_messages_py" />
+      <config projectName="turtlesim" targetName="tests" />
+      <config projectName="turtlesim" targetName="rosgraph_msgs_generate_messages_nodejs" />
+      <config projectName="turtlesim" targetName="_turtlesim_generate_messages_check_deps_Kill" />
+      <config projectName="turtlesim" targetName="turtlesim_geneus" />
+      <config projectName="turtlesim" targetName="_turtlesim_generate_messages_check_deps_TeleportAbsolute" />
+      <config projectName="turtlesim" targetName="rosgraph_msgs_generate_messages_lisp" />
+      <config projectName="turtlesim" targetName="std_srvs_generate_messages_cpp" />
+      <config projectName="turtlesim" targetName="std_msgs_generate_messages_eus" />
+      <config projectName="turtlesim" targetName="gtest" />
+      <config projectName="turtlesim" targetName="AP_actuator" />
+      <config projectName="turtlesim" targetName="geometry_msgs_generate_messages_eus" />
+      <config projectName="turtlesim" targetName="rosap_exe" />
+      <config projectName="turtlesim" targetName="download_extra_data" />
+      <config projectName="turtlesim" targetName="doxygen" />
+      <config projectName="turtlesim" targetName="turtlesim_gennodejs" />
+      <config projectName="turtlesim" targetName="rosgraph_msgs_generate_messages_cpp" />
+      <config projectName="turtlesim" targetName="gmock_main" />
+      <config projectName="turtlesim" targetName="turtlesim_generate_messages_eus" />
+      <config projectName="turtlesim" targetName="clean_test_results" />
+      <config projectName="turtlesim" targetName="gmock" />
+      <config projectName="turtlesim" targetName="_turtlesim_generate_messages_check_deps_SetPen" />
+      <config projectName="turtlesim" targetName="_turtlesim_generate_messages_check_deps_Pose" />
+      <config projectName="turtlesim" targetName="turtlesim_gencpp" />
+      <config projectName="turtlesim" targetName="geometry_msgs_generate_messages_cpp" />
+      <config projectName="turtlesim" targetName="roscpp_generate_messages_lisp" />
+      <config projectName="turtlesim" targetName="ROS_locator" />
+      <config projectName="turtlesim" targetName="std_msgs_generate_messages_cpp" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Default" GENERATION_DIR="$PROJECT_DIR$/../../turtlesim/build/turtlesim" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="820fb4b8-5c77-4dde-9aec-3bdeb9cc0487" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+    <option name="clangWarnings" value="-Wno-unused-variable,-Werror=implicit-function-declaration,-Wshadow,-Wno-shadow-field-in-constructor-modified,-Wno-shadow-ivar,-Wno--Wreorder" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default" />
+  <component name="FavoritesManager">
+    <favorites_list name="turtlesim" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="nFzNvycq" />
+  </component>
+  <component name="ProjectId" id="1p9fdj2kmWsKoVnhRh4FVO38io6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="OCFindUsagesOptions.isSearchForTextOccurrences" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../turtlesim/build/amsr-vector-fs-someipdaemon" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/AP_controller/include" />
+      <recent name="$PROJECT_DIR$/src/AP_controller" />
+      <recent name="$PROJECT_DIR$/src/rosap_exe/include" />
+      <recent name="$PROJECT_DIR$/src/rosap_exe" />
+      <recent name="$PROJECT_DIR$/src/turtlesimnode/include" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/rosap_exe/include" />
+      <recent name="$PROJECT_DIR$/src/rosap_exe" />
+      <recent name="$PROJECT_DIR$/src/AP_controller" />
+      <recent name="$PROJECT_DIR$/src/AP_controller/include" />
+      <recent name="$PROJECT_DIR$/src/lka_ap/include" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.AP_controller">
+    <configuration name="AP_controller" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="turtlesim" TARGET_NAME="AP_controller" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="turtlesim" RUN_TARGET_NAME="AP_controller">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="src-gen-turtlesim" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="turtlesim" TARGET_NAME="src-gen-turtlesim" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="src-gen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="turtlesim" TARGET_NAME="src-gen" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.AP_controller" />
+      <item itemvalue="CMake Application.src-gen-turtlesim" />
+      <item itemvalue="CMake Application.src-gen" />
+    </list>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",KIND" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="820fb4b8-5c77-4dde-9aec-3bdeb9cc0487" name="Default Changelist" comment="" />
+      <created>1614600315447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614600315447</updated>
+      <workItem from="1614600318110" duration="8166000" />
+      <workItem from="1614660056521" duration="1070000" />
+      <workItem from="1614661127629" duration="4630000" />
+      <workItem from="1614669092658" duration="5733000" />
+      <workItem from="1614679430326" duration="30000" />
+      <workItem from="1614680998032" duration="6000" />
+      <workItem from="1614681276461" duration="75000" />
+      <workItem from="1614681352867" duration="95000" />
+      <workItem from="1614688224579" duration="173000" />
+      <workItem from="1614740747402" duration="1055000" />
+      <workItem from="1614741833230" duration="10000" />
+      <workItem from="1614741859674" duration="2055000" />
+      <workItem from="1614744039659" duration="449000" />
+      <workItem from="1614744489367" duration="37000" />
+      <workItem from="1614744540778" duration="75000" />
+      <workItem from="1614744627411" duration="22000" />
+      <workItem from="1614744650620" duration="91000" />
+      <workItem from="1614744742687" duration="2379000" />
+      <workItem from="1614753264726" duration="1208000" />
+      <workItem from="1614754509788" duration="23000" />
+      <workItem from="1614754534244" duration="367000" />
+      <workItem from="1614754940512" duration="38000" />
+      <workItem from="1614755086193" duration="16000" />
+      <workItem from="1614755123168" duration="35000" />
+      <workItem from="1614755159619" duration="60000" />
+      <workItem from="1614755269881" duration="11000" />
+      <workItem from="1614755282692" duration="294000" />
+      <workItem from="1614765513595" duration="8653000" />
+      <workItem from="1614777368292" duration="1780000" />
+      <workItem from="1614828327651" duration="391000" />
+      <workItem from="1614828806832" duration="23381000" />
+      <workItem from="1614860759495" duration="569000" />
+      <workItem from="1614921449406" duration="7037000" />
+      <workItem from="1614928753456" duration="2953000" />
+      <workItem from="1616333423875" duration="1140000" />
+      <workItem from="1616334616820" duration="44000" />
+      <workItem from="1616334670436" duration="30000" />
+      <workItem from="1616334709526" duration="6429000" />
+      <workItem from="1616394948652" duration="12209000" />
+      <workItem from="1616409108816" duration="6000" />
+      <workItem from="1616409133391" duration="35322000" />
+      <workItem from="1616487554138" duration="50000" />
+      <workItem from="1616487604977" duration="80000" />
+      <workItem from="1616487686553" duration="42000" />
+      <workItem from="1616487775030" duration="32000" />
+      <workItem from="1616487808671" duration="4924000" />
+      <workItem from="1616495314834" duration="8095000" />
+      <workItem from="1616504205706" duration="20182000" />
+      <workItem from="1616568792789" duration="61375000" />
+      <workItem from="1616690119313" duration="454000" />
+      <workItem from="1616720734253" duration="657000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2198" y="45" width="800" height="684" key="#New_File_Extensions" timestamp="1616419288061">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2198" y="45" width="800" height="684" key="#New_File_Extensions/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616419288061" />
+    <state x="2061" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616487527595">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2061" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616487527595" />
+    <state x="2473" y="320" width="794" height="453" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614924827676">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2473" y="320" width="794" height="453" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614924827676" />
+    <state x="2362" y="103" width="471" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1616466945394">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2362" y="103" width="471" height="569" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616466945394" />
+    <state x="2563" y="260" width="624" height="581" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1614930473147">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2563" y="260" width="624" height="581" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614930473147" />
+    <state x="2406" y="199" width="524" height="514" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616419312344">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2406" y="199" width="524" height="514" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616419312344" />
+    <state x="726" y="300" width="524" height="514" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1614661423913" />
+    <state x="2443" y="207" width="380" height="373" key="FileChooserDialogImpl" timestamp="1616688310383">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2443" y="207" width="380" height="373" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616688310383" />
+    <state x="776" y="311" width="424" height="491" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1614755277553" />
+    <state width="1312" height="184" key="GridCell.Tab.0.bottom" timestamp="1616688326847">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="1850" height="328" key="GridCell.Tab.0.bottom/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614860533229" />
+    <state width="1312" height="184" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616688326847" />
+    <state width="925" height="253" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614861327662" />
+    <state width="1799" height="269" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1614773512191" />
+    <state width="1799" height="336" key="GridCell.Tab.0.bottom/67.27.3773.1053@67.27.3773.1053" timestamp="1614776894898" />
+    <state width="1312" height="184" key="GridCell.Tab.0.center" timestamp="1616688326847">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="1850" height="328" key="GridCell.Tab.0.center/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614860533228" />
+    <state width="1312" height="184" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616688326847" />
+    <state width="925" height="253" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614861327661" />
+    <state width="1799" height="269" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1614773512191" />
+    <state width="1799" height="336" key="GridCell.Tab.0.center/67.27.3773.1053@67.27.3773.1053" timestamp="1614776894898" />
+    <state width="1312" height="184" key="GridCell.Tab.0.left" timestamp="1616688326847">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="1850" height="328" key="GridCell.Tab.0.left/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614860533228" />
+    <state width="1312" height="184" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616688326847" />
+    <state width="925" height="253" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614861327661" />
+    <state width="1799" height="269" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1614773512190" />
+    <state width="1799" height="336" key="GridCell.Tab.0.left/67.27.3773.1053@67.27.3773.1053" timestamp="1614776894897" />
+    <state width="1312" height="184" key="GridCell.Tab.0.right" timestamp="1616688326847">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="1850" height="328" key="GridCell.Tab.0.right/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614860533229" />
+    <state width="1312" height="184" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616688326847" />
+    <state width="925" height="253" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614861327662" />
+    <state width="1799" height="269" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1614773512191" />
+    <state width="1799" height="336" key="GridCell.Tab.0.right/67.27.3773.1053@67.27.3773.1053" timestamp="1614776894898" />
+    <state width="1312" height="184" key="GridCell.Tab.1.bottom" timestamp="1616688326847">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="1850" height="328" key="GridCell.Tab.1.bottom/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614860533229" />
+    <state width="1312" height="184" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616688326847" />
+    <state width="1799" height="336" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1614767094786" />
+    <state width="1799" height="336" key="GridCell.Tab.1.bottom/67.27.3773.1053@67.27.3773.1053" timestamp="1614776894899" />
+    <state width="1312" height="184" key="GridCell.Tab.1.center" timestamp="1616688326847">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="1850" height="328" key="GridCell.Tab.1.center/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614860533229" />
+    <state width="1312" height="184" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616688326847" />
+    <state width="1799" height="336" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1614767094785" />
+    <state width="1799" height="336" key="GridCell.Tab.1.center/67.27.3773.1053@67.27.3773.1053" timestamp="1614776894898" />
+    <state width="1312" height="184" key="GridCell.Tab.1.left" timestamp="1616688326847">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="1850" height="328" key="GridCell.Tab.1.left/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614860533229" />
+    <state width="1312" height="184" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616688326847" />
+    <state width="1799" height="336" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1614767094785" />
+    <state width="1799" height="336" key="GridCell.Tab.1.left/67.27.3773.1053@67.27.3773.1053" timestamp="1614776894898" />
+    <state width="1312" height="184" key="GridCell.Tab.1.right" timestamp="1616688326847">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="1850" height="328" key="GridCell.Tab.1.right/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614860533229" />
+    <state width="1312" height="184" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616688326847" />
+    <state width="1799" height="336" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1614767094785" />
+    <state width="1799" height="336" key="GridCell.Tab.1.right/67.27.3773.1053@67.27.3773.1053" timestamp="1614776894899" />
+    <state x="2363" y="227" width="1024" height="633" key="IDE.errors.dialog" timestamp="1614927762977">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2363" y="227" width="1024" height="633" key="IDE.errors.dialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614927762977" />
+    <state width="472" height="149" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1616487678726">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="472" height="149" key="ImportCMakeProjectWizard.bottomPanel/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616487678726" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/67.27.1853.1053@67.27.1853.1053" timestamp="1614744705968" />
+    <state width="472" height="348" key="ImportCMakeProjectWizard.topPanel" timestamp="1616487678725">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="472" height="348" key="ImportCMakeProjectWizard.topPanel/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616487678725" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/67.27.1853.1053@67.27.1853.1053" timestamp="1614744705967" />
+    <state x="2386" y="31" width="900" height="737" key="SettingsEditor" timestamp="1616668067019">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2386" y="31" width="900" height="737" key="SettingsEditor/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616668067019" />
+    <state x="557" y="116" width="1037" height="737" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1614775309668" />
+    <state x="1920" y="116" width="1920" height="737" key="SettingsEditor/67.27.3773.1053@67.27.3773.1053" timestamp="1614776671639" />
+    <state width="683" height="384" key="XDebugger.FullValuePopup" timestamp="1616677213784">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state width="683" height="384" key="XDebugger.FullValuePopup/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616677213784" />
+    <state x="2386" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1616738990199">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2386" y="189" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616738990199" />
+    <state x="2907" y="248" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614928756228" />
+    <state x="1020" y="269" key="com.intellij.ide.util.TipDialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1616334709600" />
+    <state x="709" y="374" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1616720735473" />
+    <state x="2363" y="269" key="com.intellij.ide.util.TipDialog/67.27.3773.1053@67.27.3773.1053" timestamp="1614776457909" />
+    <state x="2907" y="248" key="com.intellij.ide.util.TipDialog/67.562.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614828808137" />
+    <state x="2043" y="52" width="1110" height="671" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1616684508435">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2043" y="52" width="1110" height="671" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616684508435" />
+    <state x="1975" y="79" width="701" height="630" key="find.popup" timestamp="1616484345799">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2517" y="208" width="928" height="832" key="find.popup/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614854188218" />
+    <state x="1975" y="79" width="701" height="630" key="find.popup/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616484345799" />
+    <state x="1998" y="111" width="928" height="832" key="find.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1616392692922" />
+    <state x="643" y="230" width="701" height="646" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1614774401034" />
+    <state x="2517" y="208" width="928" height="832" key="find.popup/67.562.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614828973819" />
+    <state x="735" y="423" width="707" height="316" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1614774658676">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="735" y="423" width="707" height="316" key="org.intellij.images.editor.actions.BackgroundImageDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1614774658676" />
+    <state x="2304" y="171" key="run.anything.popup" timestamp="1616669570384">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="2460" y="241" key="run.anything.popup/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614834527750" />
+    <state x="2304" y="171" key="run.anything.popup/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616669570384" />
+    <state x="2460" y="241" key="run.anything.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614778253428" />
+    <state x="2268" y="84" width="672" height="527" key="search.everywhere.popup" timestamp="1616671553785">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="3053" y="203" width="858" height="702" key="search.everywhere.popup/0.535.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614846971537" />
+    <state x="2268" y="84" width="672" height="527" key="search.everywhere.popup/67.27.1853.1053/1920.0.1366.768@1920.0.1366.768" timestamp="1616671553785" />
+    <state x="770" y="157" width="912" height="723" key="search.everywhere.popup/67.27.1853.1053/1920.0.1366.768@67.27.1853.1053" timestamp="1616419260216" />
+    <state x="2977" y="202" width="862" height="708" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1616388541795" />
+    <state x="656" y="259" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1614775479110" />
+    <state x="2293" y="225" width="1373" height="684" key="search.everywhere.popup/67.27.3773.1053@67.27.3773.1053" timestamp="1614776702243" />
+    <state x="2595" y="223" width="625" height="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1614923561762">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2595" y="223" width="625" height="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1614923561762" />
+    <state x="718" y="463" width="540" height="188" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1614755450709" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>295</line>
+          <option name="timeStamp" value="474" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>299</line>
+          <option name="timeStamp" value="475" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>303</line>
+          <option name="timeStamp" value="476" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>304</line>
+          <option name="timeStamp" value="477" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>324</line>
+          <option name="timeStamp" value="478" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>325</line>
+          <option name="timeStamp" value="479" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>326</line>
+          <option name="timeStamp" value="480" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>327</line>
+          <option name="timeStamp" value="481" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>328</line>
+          <option name="timeStamp" value="482" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>244</line>
+          <option name="timeStamp" value="483" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>200</line>
+          <option name="timeStamp" value="485" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>198</line>
+          <option name="timeStamp" value="486" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>199</line>
+          <option name="timeStamp" value="487" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>202</line>
+          <option name="timeStamp" value="488" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>203</line>
+          <option name="timeStamp" value="489" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>204</line>
+          <option name="timeStamp" value="490" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>205</line>
+          <option name="timeStamp" value="491" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>206</line>
+          <option name="timeStamp" value="492" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>216</line>
+          <option name="timeStamp" value="493" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>217</line>
+          <option name="timeStamp" value="494" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>225</line>
+          <option name="timeStamp" value="495" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>226</line>
+          <option name="timeStamp" value="496" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>234</line>
+          <option name="timeStamp" value="497" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>235</line>
+          <option name="timeStamp" value="498" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>237</line>
+          <option name="timeStamp" value="499" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>238</line>
+          <option name="timeStamp" value="500" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>239</line>
+          <option name="timeStamp" value="501" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>242</line>
+          <option name="timeStamp" value="502" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>219</line>
+          <option name="timeStamp" value="503" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>220</line>
+          <option name="timeStamp" value="504" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>222</line>
+          <option name="timeStamp" value="505" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>229</line>
+          <option name="timeStamp" value="507" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>228</line>
+          <option name="timeStamp" value="508" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>230</line>
+          <option name="timeStamp" value="509" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>231</line>
+          <option name="timeStamp" value="510" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>232</line>
+          <option name="timeStamp" value="511" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/AP_actuator/AP_actuator_swc.cpp</url>
+          <line>233</line>
+          <option name="timeStamp" value="512" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint" />
+        <breakpoint enabled="true" type="javascript-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="ToGospeed_control_proxy" language="ObjectiveC" />
+        <watch expression="thistypeProxyPtrPtr" language="ObjectiveC" />
+        <watch expression="LKA_control_proxy" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

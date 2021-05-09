@@ -1,0 +1,181 @@
+
+{
+  "services" : [
+    {
+      "name" : "SomeipSpeedControl",
+      "service_id" : 1401,
+      "major_version" : 1,
+      "minor_version" : 0,
+      "methods" : [
+      ],
+      "events" : [
+        {
+          "name" : "someip_lka_speed",
+          "id" : 45677,
+          "field" : false,
+          "proto" : "udp"
+        },
+        {
+          "name" : "Someip_ToGoal_speed",
+          "id" : 45678,
+          "field" : false,
+          "proto" : "udp"
+        }
+      ],
+      "eventgroups" : [
+        {
+          "id" : 1,
+          "events" : [
+            45677,
+            45678
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Someipdriving_information",
+      "service_id" : 1402,
+      "major_version" : 1,
+      "minor_version" : 0,
+      "methods" : [
+      ],
+      "events" : [
+        {
+          "name" : "vehicle_speed",
+          "id" : 32769,
+          "field" : false,
+          "proto" : "udp"
+        },
+        {
+          "name" : "vehicle_position",
+          "id" : 32770,
+          "field" : false,
+          "proto" : "udp"
+        }
+      ],
+      "eventgroups" : [
+        {
+          "id" : 1,
+          "events" : [
+            32769,
+            32770
+          ]
+        }
+      ]
+    }
+  ],
+  "required_service_instances" : [
+    {
+      "service_id" : 1401,
+      "instance_id" : 1,
+      "major_version" : 1,
+      "minor_version" : 4294967295,
+      "service_discovery" : {
+        "initial_delay_min_ns" : 10000000,
+        "initial_delay_max_ns" : 100000000,
+        "initial_repetitions_base_delay_ns" : 200000000,
+        "initial_repetitions_max" : 3,
+        "ttl" : 3,
+        "eventgroups" : [
+          {
+            "id" : 1,
+            "ttl" : 5,
+            "request_response_delay_min_ns" : 0,
+            "request_response_delay_max_ns" : 0
+          }
+        ]
+      },
+      "port_mapping" : {
+        "name" : "MachineMappingRequiredSomeipLKA",
+        "address" : "192.168.1.50",
+        "udp_port" : 40000
+      }
+    },
+    {
+      "service_id" : 1401,
+      "instance_id" : 2,
+      "major_version" : 1,
+      "minor_version" : 4294967295,
+      "service_discovery" : {
+        "initial_delay_min_ns" : 10000000,
+        "initial_delay_max_ns" : 100000000,
+        "initial_repetitions_base_delay_ns" : 200000000,
+        "initial_repetitions_max" : 3,
+        "ttl" : 3,
+        "eventgroups" : [
+          {
+            "id" : 1,
+            "ttl" : 5,
+            "request_response_delay_min_ns" : 0,
+            "request_response_delay_max_ns" : 0
+          }
+        ]
+      },
+      "port_mapping" : {
+        "name" : "MachineMappingRequiredSomeipSpeedControl",
+        "address" : "192.168.1.50",
+        "udp_port" : 48001
+      }
+    }
+  ],
+  "provided_service_instances" : [
+    {
+      "service_id" : 1402,
+      "instance_id" : 3,
+      "major_version" : 1,
+      "minor_version" : 0,
+      "service_discovery" : {
+        "initial_delay_min_ns" : 10000000,
+        "initial_delay_max_ns" : 100000000,
+        "initial_repetitions_base_delay_ns" : 200000000,
+        "initial_repetitions_max" : 10,
+        "cyclic_offer_delay_ns" : 4000000000,
+        "request_response_delay_min_ns" : 1500000000,
+        "request_response_delay_max_ns" : 1500000000,
+        "ttl" : 3,
+        "eventgroups" : [
+          {
+            "id" : 1,
+            "event_multicast_threshold" : 0
+          }
+        ]
+      },
+      "port_mappings" : [
+        {
+          "name" : "MachineMappingProvidedSomeipdriving_information",
+          "address" : "192.168.1.50",
+          "udp_port" : 48000
+        }
+      ]
+    }
+  ],
+  "network_endpoints" : [
+    {
+      "name" : "Networkendpoint",
+      "address" : "192.168.1.50",
+      "mtu" : 1500,
+      "service_discovery" : {
+        "multicast_address" : "239.255.255.255",
+        "port" : 12330
+      },
+      "ports" : [
+        {
+          "proto" : "udp",
+          "port" : 48000
+        },
+        {
+          "proto" : "udp",
+          "port" : 40000
+        },
+        {
+          "proto" : "udp",
+          "port" : 48001
+        }
+      ]
+    }
+  ],
+  "generatorVersion" : {
+    "name" : "amsr_com_someip",
+    "commitId" : "6cc205edba694b4589f76a5356343f3aa8f48375"
+  }
+}

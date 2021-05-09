@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="c66be8e5-90fb-4b18-9ebc-b73d5ae5bdd7">
+          <SHORT-NAME>ServiceDesign</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="b754f13a-fe87-405d-b204-f3f378f2fbbb">
+              <SHORT-NAME>driving_information</SHORT-NAME>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

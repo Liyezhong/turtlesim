@@ -1,0 +1,30 @@
+{
+  "format_version": "1.00.00",
+  "general_config":
+  {
+    "sw_cluster_ver": "1.00.00.0000",
+    "executable_ver": "1.00.00.0000",
+    "design_crc": "0x00000000"
+  },
+  "key_value_storage_list":
+  {
+    "MyExecutable/MySwc/kv_storage_1":
+    {
+      "uri": "./var",
+      "access_mode": "read_write",
+      "update_strategy": "keep_existing",
+    }
+  },
+  "file_storage_list":
+  {
+    "MyExecutable/MySwc/file_storage_2":
+    {
+      "uri": "./var",
+      "access_mode": "read_write",
+      "encoding_type": "text",
+      "encoding": "utf-8",
+      "update_strategy": "keep_existing",
+    }
+  }
+}
+

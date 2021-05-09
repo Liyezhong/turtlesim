@@ -1,0 +1,15 @@
+{
+  "name": "atua",
+  "description": "Adaptive atuator Client",
+  "dlt_id": "atua",
+  "log_mode": [
+    "kConsole",
+    "kRemote",
+    "kFile"
+  ],
+  "log_level": "kInfo",
+  "log_dir_path": "tmp",
+  "ipc_port": 33,
+  "reconnection_retry_offset": 0,
+  "msg_buf_size": 1000
+}

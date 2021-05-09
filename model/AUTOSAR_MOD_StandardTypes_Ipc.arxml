@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="c66be8e5-90fb-4b18-9ebc-b73d5ae5bdd7">
+          <SHORT-NAME>ServiceDesign</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="f587ede0-7967-4924-96dd-b5289761893a">
+              <SHORT-NAME>speed_control</SHORT-NAME>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="b754f13a-fe87-405d-b204-f3f378f2fbbb">
+              <SHORT-NAME>driving_information</SHORT-NAME>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="41165a11-e0dd-4388-aa05-24be2d343677">
+              <SHORT-NAME>external_elements</SHORT-NAME>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="60326d3b-6aae-46f3-9a50-af2ccce8137a">
+          <SHORT-NAME>Ipc</SHORT-NAME>
+          <ELEMENTS>
+            <USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT UUID="4c99dfbd-06a5-434e-a45e-d9e85e4feabb">
+              <SHORT-NAME>Ipcdriving_information</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:IPC">
+                    <SD GID="DV:SERVICE-INTERFACE-ID">0</SD>
+                    <SDG GID="DV:SERVICE-INTERFACE-VERSION">
+                      <SD GID="DV:MAJOR-VERSION">1</SD>
+                      <SD GID="DV:MINOR-VERSION">0</SD>
+                    </SDG>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <EVENT-DEPLOYMENTS>
+                <USER-DEFINED-EVENT-DEPLOYMENT UUID="9eb11a4d-6675-46b3-95ec-d2005453d946">
+                  <SHORT-NAME>vehicle_speed</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="DV:IPC">
+                        <SD GID="DV:EVENT-ID">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/turtlesim/ServiceDesign/driving_information/driving_information/vehicle_speed</EVENT-REF>
+                </USER-DEFINED-EVENT-DEPLOYMENT>
+                <USER-DEFINED-EVENT-DEPLOYMENT UUID="f25f2abf-4558-48ee-a816-c46cb4394b96">
+                  <SHORT-NAME>vehicle_position</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="DV:IPC">
+                        <SD GID="DV:EVENT-ID">2</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/turtlesim/ServiceDesign/driving_information/driving_information/vehicle_position</EVENT-REF>
+                </USER-DEFINED-EVENT-DEPLOYMENT>
+              </EVENT-DEPLOYMENTS>
+              <SERVICE-INTERFACE-REF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/driving_information/driving_information</SERVICE-INTERFACE-REF>
+            </USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT>
+            <USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT UUID="9c0c8e32-a0ae-4ea8-a4c4-53d1564d9d09">
+              <SHORT-NAME>Ipcexternal_elements</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:IPC">
+                    <SD GID="DV:SERVICE-INTERFACE-ID">1</SD>
+                    <SDG GID="DV:SERVICE-INTERFACE-VERSION">
+                      <SD GID="DV:MAJOR-VERSION">1</SD>
+                      <SD GID="DV:MINOR-VERSION">0</SD>
+                    </SDG>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <FIELD-DEPLOYMENTS>
+                <USER-DEFINED-FIELD-DEPLOYMENT UUID="c2a26ad9-a29c-4aef-be80-35ba4924caf0">
+                  <SHORT-NAME>lane</SHORT-NAME>
+                  <FIELD-REF DEST="FIELD">/turtlesim/ServiceDesign/external_elements/external_elements/lane</FIELD-REF>
+                  <GET UUID="f10282cc-902d-45c7-b531-d9d13077dd51">
+                    <SHORT-NAME>getLane</SHORT-NAME>
+                    <ADMIN-DATA>
+                      <SDGS>
+                        <SDG GID="DV:IPC">
+                          <SD GID="DV:METHOD-ID">1</SD>
+                        </SDG>
+                      </SDGS>
+                    </ADMIN-DATA>
+                  </GET>
+                  <NOTIFIER UUID="2a0e0c0f-3188-43d7-bafe-47b8e69484de">
+                    <SHORT-NAME>onLane</SHORT-NAME>
+                    <ADMIN-DATA>
+                      <SDGS>
+                        <SDG GID="DV:IPC">
+                          <SD GID="DV:EVENT-ID">2</SD>
+                        </SDG>
+                      </SDGS>
+                    </ADMIN-DATA>
+                  </NOTIFIER>
+                  <SET UUID="7ef203e2-11f6-4c27-907a-bc62d45b1f1e">
+                    <SHORT-NAME>setLane</SHORT-NAME>
+                    <ADMIN-DATA>
+                      <SDGS>
+                        <SDG GID="DV:IPC">
+                          <SD GID="DV:METHOD-ID">3</SD>
+                        </SDG>
+                      </SDGS>
+                    </ADMIN-DATA>
+                  </SET>
+                </USER-DEFINED-FIELD-DEPLOYMENT>
+                <USER-DEFINED-FIELD-DEPLOYMENT UUID="3b6554da-ce73-4d5e-9b57-372a8f97daaa">
+                  <SHORT-NAME>object</SHORT-NAME>
+                  <FIELD-REF DEST="FIELD">/turtlesim/ServiceDesign/external_elements/external_elements/object</FIELD-REF>
+                  <GET UUID="2543e186-7cea-4c1b-84fd-9770f7e3234d">
+                    <SHORT-NAME>getObject</SHORT-NAME>
+                    <ADMIN-DATA>
+                      <SDGS>
+                        <SDG GID="DV:IPC">
+                          <SD GID="DV:METHOD-ID">4</SD>
+                        </SDG>
+                      </SDGS>
+                    </ADMIN-DATA>
+                  </GET>
+                  <NOTIFIER UUID="06cc2f7d-7c56-4d25-b348-eb57ffb4a175">
+                    <SHORT-NAME>onObject</SHORT-NAME>
+                    <ADMIN-DATA>
+                      <SDGS>
+                        <SDG GID="DV:IPC">
+                          <SD GID="DV:EVENT-ID">5</SD>
+                        </SDG>
+                      </SDGS>
+                    </ADMIN-DATA>
+                  </NOTIFIER>
+                  <SET UUID="3ab4605e-d2fe-427c-a2eb-7081528ff691">
+                    <SHORT-NAME>setObject</SHORT-NAME>
+                    <ADMIN-DATA>
+                      <SDGS>
+                        <SDG GID="DV:IPC">
+                          <SD GID="DV:METHOD-ID">6</SD>
+                        </SDG>
+                      </SDGS>
+                    </ADMIN-DATA>
+                  </SET>
+                </USER-DEFINED-FIELD-DEPLOYMENT>
+              </FIELD-DEPLOYMENTS>
+              <SERVICE-INTERFACE-REF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/external_elements/external_elements</SERVICE-INTERFACE-REF>
+            </USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT>
+            <USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT UUID="e551f5e6-a283-4e89-bc5b-8d87d4eae058">
+              <SHORT-NAME>Ipcspeed_control</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:IPC">
+                    <SD GID="DV:SERVICE-INTERFACE-ID">2</SD>
+                    <SDG GID="DV:SERVICE-INTERFACE-VERSION">
+                      <SD GID="DV:MAJOR-VERSION">1</SD>
+                      <SD GID="DV:MINOR-VERSION">0</SD>
+                    </SDG>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <EVENT-DEPLOYMENTS>
+                <USER-DEFINED-EVENT-DEPLOYMENT UUID="cde1a178-b9f4-4f02-8bcb-ffd1f3fdc746">
+                  <SHORT-NAME>LKA_speed</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="DV:IPC">
+                        <SD GID="DV:EVENT-ID">1</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/turtlesim/ServiceDesign/speed_control/speed_control/LKA_speed</EVENT-REF>
+                </USER-DEFINED-EVENT-DEPLOYMENT>
+                <USER-DEFINED-EVENT-DEPLOYMENT UUID="b1d68f5c-930d-4ebe-b79b-8837882c6056">
+                  <SHORT-NAME>ToGoal_speed</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="DV:IPC">
+                        <SD GID="DV:EVENT-ID">2</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <EVENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/turtlesim/ServiceDesign/speed_control/speed_control/ToGoal_speed</EVENT-REF>
+                </USER-DEFINED-EVENT-DEPLOYMENT>
+              </EVENT-DEPLOYMENTS>
+              <SERVICE-INTERFACE-REF DEST="SERVICE-INTERFACE">/turtlesim/ServiceDesign/speed_control/speed_control</SERVICE-INTERFACE-REF>
+            </USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT>
+          </ELEMENTS>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="7a51023c-78de-49ab-a131-ebc01e9fa1d1">
+              <SHORT-NAME>Provided</SHORT-NAME>
+              <ELEMENTS>
+                <PROVIDED-USER-DEFINED-SERVICE-INSTANCE UUID="ebb04547-548b-41e5-af22-94bc07b0b371">
+                  <SHORT-NAME>ProvidedIpcdriving_information</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="DV:IPC">
+                        <SD GID="DV:SERVICE-INSTANCE-ID">1</SD>
+                        <SDG GID="DV:SERVICE-DISCOVERY">
+                          <SD GID="DV:DOMAIN">1</SD>
+                          <SD GID="DV:PORT">40000</SD>
+                          <SD GID="DV:SERVICE-OFFER-TIME-TO-LIVE">200</SD>
+                        </SDG>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SERVICE-INTERFACE-REF DEST="USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT">/turtlesim/Ipc/Ipcdriving_information</SERVICE-INTERFACE-REF>
+                </PROVIDED-USER-DEFINED-SERVICE-INSTANCE>
+                <PROVIDED-USER-DEFINED-SERVICE-INSTANCE UUID="768c3bc5-7105-40ad-a571-0c4dd0be39c6">
+                  <SHORT-NAME>ProvidedIpcspeed_control</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="DV:IPC">
+                        <SD GID="DV:SERVICE-INSTANCE-ID">3</SD>
+                        <SDG GID="DV:SERVICE-DISCOVERY">
+                          <SD GID="DV:DOMAIN">1</SD>
+                          <SD GID="DV:PORT">40002</SD>
+                          <SD GID="DV:SERVICE-OFFER-TIME-TO-LIVE">200</SD>
+                        </SDG>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SERVICE-INTERFACE-REF DEST="USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT">/turtlesim/Ipc/Ipcspeed_control</SERVICE-INTERFACE-REF>
+                </PROVIDED-USER-DEFINED-SERVICE-INSTANCE>
+              </ELEMENTS>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="3d2d8664-9ed2-41d7-863a-219fe0e937b5">
+                  <SHORT-NAME>Mapping</SHORT-NAME>
+                  <ELEMENTS>
+                    <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="183c5f26-5d60-47df-8231-7d65197c4dd0">
+                      <SHORT-NAME>PortMappingProvidedIpcdriving_information</SHORT-NAME>
+                      <PORT-PROTOTYPE-IREF>
+                        <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/rosap_exe/rosap_exe/cswc</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                        <TARGET-PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/turtlesim/Application_design/rosap_exe/rosap_converter/PPort_drivinginfomation</TARGET-PORT-PROTOTYPE-REF>
+                      </PORT-PROTOTYPE-IREF>
+                      <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/rosap_exeProcess</PROCESS-REF>
+                      <SERVICE-INSTANCE-REF DEST="PROVIDED-USER-DEFINED-SERVICE-INSTANCE">/turtlesim/Ipc/Provided/ProvidedIpcdriving_information</SERVICE-INSTANCE-REF>
+                    </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+                    <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="8ded5e01-137b-4624-a85a-6d4350715ba0">
+                      <SHORT-NAME>PortMappingProvidedIpcspeed_control</SHORT-NAME>
+                      <PORT-PROTOTYPE-IREF>
+                        <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/rosap_exe/rosap_exe/cswc</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                        <TARGET-PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/turtlesim/Application_design/rosap_exe/rosap_converter/PPort_speed_control</TARGET-PORT-PROTOTYPE-REF>
+                      </PORT-PROTOTYPE-IREF>
+                      <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/rosap_exeProcess</PROCESS-REF>
+                      <SERVICE-INSTANCE-REF DEST="PROVIDED-USER-DEFINED-SERVICE-INSTANCE">/turtlesim/Ipc/Provided/ProvidedIpcspeed_control</SERVICE-INSTANCE-REF>
+                    </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+            <AR-PACKAGE UUID="5d2e0eb9-71d0-4f58-b51e-1734a21ad8e2">
+              <SHORT-NAME>Required</SHORT-NAME>
+              <ELEMENTS>
+                <REQUIRED-USER-DEFINED-SERVICE-INSTANCE UUID="ce14cd64-e341-4ef4-8a31-6db4937f994c">
+                  <SHORT-NAME>RequiredIpcexternal_elements</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="DV:IPC">
+                        <SDG GID="DV:SERVICE-VERSION">
+                          <SD GID="DV:MAJOR-VERSION">ANY</SD>
+                          <SD GID="DV:MINOR-VERSION">ANY</SD>
+                        </SDG>
+                        <SD GID="DV:SERVICE-INSTANCE-ID">2</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SERVICE-INTERFACE-REF DEST="USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT">/turtlesim/Ipc/Ipcexternal_elements</SERVICE-INTERFACE-REF>
+                </REQUIRED-USER-DEFINED-SERVICE-INSTANCE>
+              </ELEMENTS>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="066eacb0-a354-4466-9090-0957534e2349">
+                  <SHORT-NAME>Mapping</SHORT-NAME>
+                  <ELEMENTS>
+                    <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="f53994ce-4f7e-45d6-bb80-65828655e608">
+                      <SHORT-NAME>PortMappingRequiredIpcexternal_elements</SHORT-NAME>
+                      <PORT-PROTOTYPE-IREF>
+                        <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/rosap_exe/rosap_exe/cswc</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                        <TARGET-PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/turtlesim/Application_design/rosap_exe/rosap_converter/RPort_external_elements</TARGET-PORT-PROTOTYPE-REF>
+                      </PORT-PROTOTYPE-IREF>
+                      <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/rosap_exeProcess</PROCESS-REF>
+                      <SERVICE-INSTANCE-REF DEST="REQUIRED-USER-DEFINED-SERVICE-INSTANCE">/turtlesim/Ipc/Required/RequiredIpcexternal_elements</SERVICE-INSTANCE-REF>
+                    </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

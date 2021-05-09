@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="60326d3b-6aae-46f3-9a50-af2ccce8137a">
+          <SHORT-NAME>Ipc</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="7a51023c-78de-49ab-a131-ebc01e9fa1d1">
+              <SHORT-NAME>Provided</SHORT-NAME>
+              <ELEMENTS>
+                <PROVIDED-USER-DEFINED-SERVICE-INSTANCE UUID="dc923f43-58d9-4f0f-bdce-e78508e0d69f">
+                  <SHORT-NAME>ProvidedIpcexternal_elements</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="DV:IPC">
+                        <SD GID="DV:SERVICE-INSTANCE-ID">2</SD>
+                        <SDG GID="DV:SERVICE-DISCOVERY">
+                          <SD GID="DV:DOMAIN">1</SD>
+                          <SD GID="DV:PORT">40005</SD>
+                          <SD GID="DV:SERVICE-OFFER-TIME-TO-LIVE">200</SD>
+                        </SDG>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <SERVICE-INTERFACE-REF DEST="USER-DEFINED-SERVICE-INTERFACE-DEPLOYMENT">/turtlesim/Ipc/Ipcexternal_elements</SERVICE-INTERFACE-REF>
+                </PROVIDED-USER-DEFINED-SERVICE-INSTANCE>
+              </ELEMENTS>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="3d2d8664-9ed2-41d7-863a-219fe0e937b5">
+                  <SHORT-NAME>Mapping</SHORT-NAME>
+                  <ELEMENTS>
+                    <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="7750502b-8bb0-4e9c-bac5-e14e2ec167f4">
+                      <SHORT-NAME>PortMappingProvidedIpcexternal_elements</SHORT-NAME>
+                      <PORT-PROTOTYPE-IREF>
+                        <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/AP_controller_app/AP_controller/controller</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                        <TARGET-PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/turtlesim/Application_design/AP_controller_app/controller/external_elements</TARGET-PORT-PROTOTYPE-REF>
+                      </PORT-PROTOTYPE-IREF>
+                      <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/AP_controllerProcess</PROCESS-REF>
+                      <SERVICE-INSTANCE-REF DEST="PROVIDED-USER-DEFINED-SERVICE-INSTANCE">/turtlesim/Ipc/Provided/ProvidedIpcexternal_elements</SERVICE-INSTANCE-REF>
+                    </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+                  </ELEMENTS>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

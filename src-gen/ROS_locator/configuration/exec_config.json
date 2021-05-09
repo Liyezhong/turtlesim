@@ -1,0 +1,43 @@
+
+{
+  "category" : "APPLICATION_LEVEL",
+  "name" : "ROS_locator",
+  "isAdaptiveApplication" : 1,
+  "processes" : [
+    {
+      "name" : "ros_locatior",
+      "shortNamePath" : "/turtlesim/deployment/ros_locatior",
+      "startupConfigs" : [
+        {
+          "schedulingPolicy" : "SCHEDULING-POLICY-ROUND-ROBIN",
+          "schedulingPriority" : 10,
+          "options" : [
+            "-c",
+            "./etc/application.json"
+          ],
+          "executionDependency" : {
+          },
+          "functionGroups" : [
+            {
+              "name" : "MachineState",
+              "states" : [
+                "Running"
+              ]
+            }
+          ],
+          "cores" : {
+            "shallRunOn" : [
+              1,
+              2,
+              3
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "generatorVersion" : {
+    "name" : "amsr_em_exec_config",
+    "commitId" : "6cc205edba694b4589f76a5356343f3aa8f48375"
+  }
+}

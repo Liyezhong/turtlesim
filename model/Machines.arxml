@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="6d9cf75a-bb76-4a8d-b5b2-ff1c79983e48">
+          <SHORT-NAME>Machines</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="ced145e3-eab8-4c39-9048-3bfd996f2387">
+              <SHORT-NAME>xilinxMachine</SHORT-NAME>
+              <ELEMENTS>
+                <MACHINE UUID="07e89646-62d9-43c6-86dd-cb5a9c12bbd7">
+                  <SHORT-NAME>xilinxMachine</SHORT-NAME>
+                  <FUNCTION-GROUPS>
+                    <MODE-DECLARATION-GROUP-PROTOTYPE UUID="7f609a04-7bff-4f5e-8cd8-0b0b25fd0783">
+                      <SHORT-NAME>MachineState</SHORT-NAME>
+                      <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/turtlesim/Machines/EM_states/RaspiMachineMachineState</TYPE-TREF>
+                    </MODE-DECLARATION-GROUP-PROTOTYPE>
+                  </FUNCTION-GROUPS>
+                  <MACHINE-DESIGN-REF DEST="MACHINE-DESIGN">/turtlesim/Machines/xilinxMachineDesign</MACHINE-DESIGN-REF>
+                  <MODULE-INSTANTIATIONS>
+                    <OS-MODULE-INSTANTIATION UUID="6eda146c-e9fb-4705-b0f0-967941760ae3">
+                      <SHORT-NAME>Os</SHORT-NAME>
+                      <RESOURCE-GROUPS>
+                        <RESOURCE-GROUP UUID="35db33d2-2cb7-44d7-bf00-660dee5133b1">
+                          <SHORT-NAME>ControlGroup</SHORT-NAME>
+                          <CPU-USAGE>50</CPU-USAGE>
+                          <MEM-USAGE>4096</MEM-USAGE>
+                        </RESOURCE-GROUP>
+                      </RESOURCE-GROUPS>
+                    </OS-MODULE-INSTANTIATION>
+                  </MODULE-INSTANTIATIONS>
+                  <PROCESSORS>
+                    <PROCESSOR UUID="57742d25-5450-438f-81bf-550cd85f7a23">
+                      <SHORT-NAME>Processor</SHORT-NAME>
+                      <CORES>
+                        <PROCESSOR-CORE UUID="83eb8a05-2b97-4a87-b843-0d283df0d128">
+                          <SHORT-NAME>ProcessorCore0</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">0</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                        </PROCESSOR-CORE>
+                        <PROCESSOR-CORE UUID="24f2104c-363d-4584-9417-fbbc50662fc3">
+                          <SHORT-NAME>ProcessorCore1</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">1</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                        </PROCESSOR-CORE>
+                        <PROCESSOR-CORE UUID="50ef16d7-c4f3-45e3-b5a1-6579df014c84">
+                          <SHORT-NAME>ProcessorCore2</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">2</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                        </PROCESSOR-CORE>
+                        <PROCESSOR-CORE UUID="491fb619-925f-49eb-bb0c-f7b884f744a7">
+                          <SHORT-NAME>ProcessorCore3</SHORT-NAME>
+                          <ADMIN-DATA>
+                            <SDGS>
+                              <SDG GID="DV:Adaptive">
+                                <SD GID="DV:ProcessorCoreNumber">3</SD>
+                              </SDG>
+                            </SDGS>
+                          </ADMIN-DATA>
+                        </PROCESSOR-CORE>
+                      </CORES>
+                    </PROCESSOR>
+                  </PROCESSORS>
+                </MACHINE>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

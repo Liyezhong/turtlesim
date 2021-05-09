@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="e0e9b523-5219-4965-85f8-2a283b92246b">
+          <SHORT-NAME>deployment</SHORT-NAME>
+          <ELEMENTS>
+            <PROCESS UUID="59db72ac-9717-439a-a8c1-6efcb03ff981">
+              <SHORT-NAME>ros_locatior</SHORT-NAME>
+              <EXECUTABLE-REF DEST="EXECUTABLE">/turtlesim/Application_design/ROS_locator/ROS_locator</EXECUTABLE-REF>
+              <PROCESS-STATE-MACHINE UUID="db95cce7-516a-4302-bd20-0fc75dd4bba6">
+                <SHORT-NAME>ModeDeclarationGroupPrototype</SHORT-NAME>
+                <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/turtlesim/deployment/ProcessStates</TYPE-TREF>
+              </PROCESS-STATE-MACHINE>
+              <STATE-DEPENDENT-STARTUP-CONFIGS>
+                <STATE-DEPENDENT-STARTUP-CONFIG>
+                  <FUNCTION-GROUP-STATE-IREFS>
+                    <FUNCTION-GROUP-STATE-IREF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/turtlesim/Machines/PCMachine/PCMachine/MachineState</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/turtlesim/Machines/EM_states/PCMachineMachineState/Running</TARGET-MODE-DECLARATION-REF>
+                    </FUNCTION-GROUP-STATE-IREF>
+                  </FUNCTION-GROUP-STATE-IREFS>
+                  <STARTUP-CONFIG-REF DEST="STARTUP-CONFIG">/turtlesim/Application_design/StartupConfigSet/roslocatorStartupConfig</STARTUP-CONFIG-REF>
+                </STATE-DEPENDENT-STARTUP-CONFIG>
+              </STATE-DEPENDENT-STARTUP-CONFIGS>
+            </PROCESS>
+            <PROCESS UUID="e1693503-9363-4498-83dd-965e601f52f0">
+              <SHORT-NAME>rosap_exeProcess</SHORT-NAME>
+              <EXECUTABLE-REF DEST="EXECUTABLE">/turtlesim/Application_design/rosap_exe/rosap_exe</EXECUTABLE-REF>
+              <PROCESS-STATE-MACHINE UUID="e8d00a1e-f3c3-4001-a3f7-fc0145f7e00c">
+                <SHORT-NAME>ModeDeclarationGroupPrototype</SHORT-NAME>
+                <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/turtlesim/deployment/ProcessStates</TYPE-TREF>
+              </PROCESS-STATE-MACHINE>
+              <STATE-DEPENDENT-STARTUP-CONFIGS>
+                <STATE-DEPENDENT-STARTUP-CONFIG>
+                  <FUNCTION-GROUP-STATE-IREFS>
+                    <FUNCTION-GROUP-STATE-IREF>
+                      <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/turtlesim/Machines/PCMachine/PCMachine/MachineState</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                      <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/turtlesim/Machines/EM_states/PCMachineMachineState/Running</TARGET-MODE-DECLARATION-REF>
+                    </FUNCTION-GROUP-STATE-IREF>
+                  </FUNCTION-GROUP-STATE-IREFS>
+                  <STARTUP-CONFIG-REF DEST="STARTUP-CONFIG">/turtlesim/Application_design/StartupConfigSet/apconverterStartupConfig</STARTUP-CONFIG-REF>
+                </STATE-DEPENDENT-STARTUP-CONFIG>
+              </STATE-DEPENDENT-STARTUP-CONFIGS>
+            </PROCESS>
+            <MODE-DECLARATION-GROUP UUID="ee1e5b0f-cf74-4814-b009-054fca628702">
+              <SHORT-NAME>ProcessStates</SHORT-NAME>
+              <INITIAL-MODE-REF DEST="MODE-DECLARATION">/turtlesim/deployment/ProcessStates/running</INITIAL-MODE-REF>
+              <MODE-DECLARATIONS>
+                <MODE-DECLARATION UUID="2419cc60-ffe7-41af-b839-e8e71a59c201">
+                  <SHORT-NAME>running</SHORT-NAME>
+                  <VALUE>0</VALUE>
+                </MODE-DECLARATION>
+                <MODE-DECLARATION UUID="d2eddc0e-204c-4a2a-b695-6affa17c0bf4">
+                  <SHORT-NAME>terminating</SHORT-NAME>
+                  <VALUE>1</VALUE>
+                </MODE-DECLARATION>
+              </MODE-DECLARATIONS>
+            </MODE-DECLARATION-GROUP>
+          </ELEMENTS>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="b1b14cf3-7012-4a47-88cd-e073bfdff89f">
+              <SHORT-NAME>Mapping</SHORT-NAME>
+              <ELEMENTS>
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="8bf94a22-cbd6-47ce-9c78-b395b082b6b8">
+                  <SHORT-NAME>MachineMappingprovideeSomeipTogoalspeed</SHORT-NAME>
+                  <COMMUNICATION-CONNECTOR-REF DEST="ETHERNET-COMMUNICATION-CONNECTOR">/turtlesim/Machines/raspiMachineDesign/Networkendpointraspi</COMMUNICATION-CONNECTOR-REF>
+                  <SERVICE-INSTANCE-REFS>
+                    <SERVICE-INSTANCE-REF DEST="PROVIDED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Provided/ProvidedSomeipSpeedControl</SERVICE-INSTANCE-REF>
+                  </SERVICE-INSTANCE-REFS>
+                  <UDP-PORT>40010</UDP-PORT>
+                </SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
+                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="03b126a4-26ec-4cea-8064-a7c4e6a3362b">
+                  <SHORT-NAME>PortMappingRequiredSomeipdriving_information</SHORT-NAME>
+                  <PORT-PROTOTYPE-IREF>
+                    <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/AP_controller_app/AP_controller/controller</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                    <TARGET-PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/turtlesim/Application_design/AP_controller_app/controller/driving_information</TARGET-PORT-PROTOTYPE-REF>
+                  </PORT-PROTOTYPE-IREF>
+                  <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/AP_controllerProcess</PROCESS-REF>
+                  <SERVICE-INSTANCE-REF DEST="REQUIRED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Required/RequiredSomeipdriving_information</SERVICE-INSTANCE-REF>
+                </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="ad669c77-6b7a-4260-b822-ca597321abc7">
+                  <SHORT-NAME>MachineMappingProvidedSomeipdriving_information</SHORT-NAME>
+                  <COMMUNICATION-CONNECTOR-REF DEST="ETHERNET-COMMUNICATION-CONNECTOR">/turtlesim/Machines/PCMachineDesign/Networkendpoint</COMMUNICATION-CONNECTOR-REF>
+                  <SERVICE-INSTANCE-REFS>
+                    <SERVICE-INSTANCE-REF DEST="PROVIDED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Provided/ProvidedSomeipdriving_information</SERVICE-INSTANCE-REF>
+                  </SERVICE-INSTANCE-REFS>
+                  <IPV-4-MULTICAST-IP-ADDRESS/>
+                  <UDP-PORT>48000</UDP-PORT>
+                </SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
+                <SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING UUID="6299ba88-b248-4d09-9395-ccd69f52620a">
+                  <SHORT-NAME>PortMappingRequiredSomeipSpeedControl</SHORT-NAME>
+                  <PORT-PROTOTYPE-IREF>
+                    <CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF DEST="ROOT-SW-COMPONENT-PROTOTYPE">/turtlesim/Application_design/AP_actuator_app/AP_actuator/actuator</CONTEXT-ROOT-SW-COMPONENT-PROTOTYPE-REF>
+                    <TARGET-PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/turtlesim/Application_design/AP_actuator_app/actuator/speed_control</TARGET-PORT-PROTOTYPE-REF>
+                  </PORT-PROTOTYPE-IREF>
+                  <PROCESS-REF DEST="PROCESS">/turtlesim/deployment/ap_actuatorProcess</PROCESS-REF>
+                  <SERVICE-INSTANCE-REF DEST="REQUIRED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Required/RequiredSomeipSpeedControl</SERVICE-INSTANCE-REF>
+                </SERVICE-INSTANCE-TO-PORT-PROTOTYPE-MAPPING>
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="cbbfc10c-6a3f-42c8-9071-5dedd28ab6c6">
+                  <SHORT-NAME>MachineMappingRequiredSomeipSpeedControl</SHORT-NAME>
+                  <COMMUNICATION-CONNECTOR-REF DEST="ETHERNET-COMMUNICATION-CONNECTOR">/turtlesim/Machines/PCMachineDesign/Networkendpoint</COMMUNICATION-CONNECTOR-REF>
+                  <SERVICE-INSTANCE-REFS>
+                    <SERVICE-INSTANCE-REF DEST="REQUIRED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Required/RequiredSomeipSpeedControl</SERVICE-INSTANCE-REF>
+                  </SERVICE-INSTANCE-REFS>
+                  <IPV-4-MULTICAST-IP-ADDRESS/>
+                  <UDP-PORT>48001</UDP-PORT>
+                </SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
+                <SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING UUID="351e2f73-fa2f-424b-ae6d-bfbb73981172">
+                  <SHORT-NAME>MachineMappingRequiredSomeipdriving_information</SHORT-NAME>
+                  <COMMUNICATION-CONNECTOR-REF DEST="ETHERNET-COMMUNICATION-CONNECTOR">/turtlesim/Machines/raspiMachineDesign/Networkendpointraspi</COMMUNICATION-CONNECTOR-REF>
+                  <SERVICE-INSTANCE-REFS>
+                    <SERVICE-INSTANCE-REF DEST="REQUIRED-SOMEIP-SERVICE-INSTANCE">/turtlesim/Someip/Required/RequiredSomeipdriving_information</SERVICE-INSTANCE-REF>
+                  </SERVICE-INSTANCE-REFS>
+                  <UDP-PORT>48002</UDP-PORT>
+                </SOMEIP-SERVICE-INSTANCE-TO-MACHINE-MAPPING>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="60326d3b-6aae-46f3-9a50-af2ccce8137a">
+          <SHORT-NAME>Ipc</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="7a51023c-78de-49ab-a131-ebc01e9fa1d1">
+              <SHORT-NAME>Provided</SHORT-NAME>
+              <AR-PACKAGES>
+                <AR-PACKAGE UUID="3d2d8664-9ed2-41d7-863a-219fe0e937b5">
+                  <SHORT-NAME>Mapping</SHORT-NAME>
+                </AR-PACKAGE>
+              </AR-PACKAGES>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

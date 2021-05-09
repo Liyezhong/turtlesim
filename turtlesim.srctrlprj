@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <source_groups>
+        <source_group_a1dd5dfd-4388-4e22-8854-8a673b833ce0>
+            <build_file_path>
+                <compilation_db_path>cmake-build-debug/compile_commands.json</compilation_db_path>
+            </build_file_path>
+            <indexed_header_paths>
+                <indexed_header_path>/opt/ros/melodic/include</indexed_header_path>
+                <indexed_header_path>/usr/include/x86_64-linux-gnu/qt5</indexed_header_path>
+                <indexed_header_path>/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++</indexed_header_path>
+                <indexed_header_path>/usr/src/googletest/googlemock</indexed_header_path>
+                <indexed_header_path>/usr/src/googletest/googletest</indexed_header_path>
+                <indexed_header_path>cmake-build-debug/devel/include</indexed_header_path>
+                <indexed_header_path>cmake-build-debug/include/turtlesim</indexed_header_path>
+                <indexed_header_path>include</indexed_header_path>
+                <indexed_header_path>src</indexed_header_path>
+                <indexed_header_path>tutorials</indexed_header_path>
+            </indexed_header_paths>
+            <name>C/C++ from Compilation Database</name>
+            <pch_flags>
+                <use_compiler_flags>1</use_compiler_flags>
+            </pch_flags>
+            <status>enabled</status>
+            <type>C/C++ from Compilation Database</type>
+        </source_group_a1dd5dfd-4388-4e22-8854-8a673b833ce0>
+    </source_groups>
+    <version>8</version>
+</config>

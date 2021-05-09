@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectAssistant DpaSchemaVersion="00.03" InitiallyCreatedWithToolVersion="2.3.41.93818" MsrPlatform="adaptive" uuid="bb41edd5-5a90-441e-a576-2b08b0118fb5">
+    <General>
+        <Name>adpa</Name>
+        <Version>1.0</Version>
+        <Author>qts</Author>
+    </General>
+    <CompatibilityVersion>
+        <Current>1.0.0</Current>
+        <AsrMdfRevision>R047</AsrMdfRevision>
+    </CompatibilityVersion>
+    <Environment>
+        <SipId>Adaptive-SIP</SipId>
+    </Environment>
+    <Folders>
+        <GenData>../src-gen</GenData>
+        <Logs>./log</Logs>
+        <ARXML>../model</ARXML>
+    </Folders>
+    <Properties>
+        <ProjectType>MachineIntegration</ProjectType>
+    </Properties>
+    <ProjectReferences/>
+    <ToolSettings>
+        <Misc>
+            <Settings Name="com.vector.cfg.automation.scripting.SearchLocations">
+                <Settings Name="71c478d1403c534fb2a4900e9510694b">
+                    <Setting Value="$(DpaProjectFolder)/../../../../home/qts/eclipse-workspace/turtlesim/scripts" Name="LocationPath"/>
+                </Settings>
+                <Settings Name="e1081b015d9ef24c2626174b6fd332b8">
+                    <Setting Value="$(DpaProjectFolder)/../scripts" Name="LocationPath"/>
+                </Settings>
+            </Settings>
+        </Misc>
+    </ToolSettings>
+</ProjectAssistant>

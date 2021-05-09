@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="dc28a505-bec6-488c-bd19-20130017ba45">
+          <SHORT-NAME>Someip</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="e155c365-96d1-4a4c-8889-cbb9c46a95ff">
+              <SHORT-NAME>Provided</SHORT-NAME>
+              <ELEMENTS>
+                <PROVIDED-SOMEIP-SERVICE-INSTANCE UUID="ce3afea2-0514-40ed-a84b-594dcd172d82">
+                  <SHORT-NAME>ProvidedSomeipSpeedControl</SHORT-NAME>
+                  <SERVICE-INTERFACE-REF DEST="SOMEIP-SERVICE-INTERFACE-DEPLOYMENT">/turtlesim/Someip/SomeipSpeedControl</SERVICE-INTERFACE-REF>
+                  <PROVIDED-EVENT-GROUPS>
+                    <SOMEIP-PROVIDED-EVENT-GROUP UUID="63dcb77f-51cf-4778-b43b-e7cae6f956c4">
+                      <SHORT-NAME>SomeipEventGroup</SHORT-NAME>
+                      <EVENT-GROUP-REF DEST="SOMEIP-EVENT-GROUP">/turtlesim/Someip/SomeipSpeedControl/SomeipEventGroup</EVENT-GROUP-REF>
+                      <MULTICAST-THRESHOLD>0</MULTICAST-THRESHOLD>
+                    </SOMEIP-PROVIDED-EVENT-GROUP>
+                  </PROVIDED-EVENT-GROUPS>
+                  <SD-SERVER-CONFIG-REF DEST="SOMEIP-SD-SERVER-SERVICE-INSTANCE-CONFIG">/turtlesim/Someip/Provided/SomeipSdServerServiceInstanceConfigspeed_control</SD-SERVER-CONFIG-REF>
+                  <SERVICE-INSTANCE-ID>2</SERVICE-INSTANCE-ID>
+                </PROVIDED-SOMEIP-SERVICE-INSTANCE>
+                <SOMEIP-SD-SERVER-SERVICE-INSTANCE-CONFIG UUID="e57d3548-4761-42ce-a17a-041b5dd8707d">
+                  <SHORT-NAME>SomeipSdServerServiceInstanceConfigspeed_control</SHORT-NAME>
+                  <INITIAL-OFFER-BEHAVIOR>
+                    <INITIAL-DELAY-MAX-VALUE>0.1</INITIAL-DELAY-MAX-VALUE>
+                    <INITIAL-DELAY-MIN-VALUE>0.01</INITIAL-DELAY-MIN-VALUE>
+                    <INITIAL-REPETITIONS-BASE-DELAY>0.2</INITIAL-REPETITIONS-BASE-DELAY>
+                    <INITIAL-REPETITIONS-MAX>10</INITIAL-REPETITIONS-MAX>
+                  </INITIAL-OFFER-BEHAVIOR>
+                  <OFFER-CYCLIC-DELAY>4</OFFER-CYCLIC-DELAY>
+                  <REQUEST-RESPONSE-DELAY>
+                    <MAX-VALUE>1.5</MAX-VALUE>
+                    <MIN-VALUE>1.5</MIN-VALUE>
+                  </REQUEST-RESPONSE-DELAY>
+                  <SERVICE-OFFER-TIME-TO-LIVE>3</SERVICE-OFFER-TIME-TO-LIVE>
+                </SOMEIP-SD-SERVER-SERVICE-INSTANCE-CONFIG>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

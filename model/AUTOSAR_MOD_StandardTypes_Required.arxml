@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="67b43a93-4178-435f-89e2-a0ce6dac1ee4">
+      <SHORT-NAME>turtlesim</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="dc28a505-bec6-488c-bd19-20130017ba45">
+          <SHORT-NAME>Someip</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="7961168e-2789-4043-8869-9caee69c9b1a">
+              <SHORT-NAME>Required</SHORT-NAME>
+              <ELEMENTS>
+                <REQUIRED-SOMEIP-SERVICE-INSTANCE UUID="5c281b43-ec48-4d4e-bda7-f0b8896f99af">
+                  <SHORT-NAME>RequiredSomeipdriving_information</SHORT-NAME>
+                  <SERVICE-INTERFACE-REF DEST="SOMEIP-SERVICE-INTERFACE-DEPLOYMENT">/turtlesim/Someip/Someipdriving_information</SERVICE-INTERFACE-REF>
+                  <REQUIRED-EVENT-GROUPS>
+                    <SOMEIP-REQUIRED-EVENT-GROUP>
+                      <SHORT-NAME>SomeipEventGroup</SHORT-NAME>
+                      <EVENT-GROUP-REF DEST="SOMEIP-EVENT-GROUP">/turtlesim/Someip/Someipdriving_information/SomeipEventGroup</EVENT-GROUP-REF>
+                      <SD-CLIENT-EVENT-GROUP-TIMING-CONFIG-REF DEST="SOMEIP-SD-CLIENT-EVENT-GROUP-TIMING-CONFIG">/turtlesim/Someip/SomeipSdClientEventGroupTimingConfig</SD-CLIENT-EVENT-GROUP-TIMING-CONFIG-REF>
+                    </SOMEIP-REQUIRED-EVENT-GROUP>
+                  </REQUIRED-EVENT-GROUPS>
+                  <REQUIRED-MINOR-VERSION>ANY</REQUIRED-MINOR-VERSION>
+                  <REQUIRED-SERVICE-INSTANCE-ID>3</REQUIRED-SERVICE-INSTANCE-ID>
+                  <SD-CLIENT-CONFIG-REF DEST="SOMEIP-SD-CLIENT-SERVICE-INSTANCE-CONFIG">/turtlesim/Someip/Required/SomeipSdClientServiceInstanceConfigdriving_information</SD-CLIENT-CONFIG-REF>
+                </REQUIRED-SOMEIP-SERVICE-INSTANCE>
+                <SOMEIP-SD-CLIENT-SERVICE-INSTANCE-CONFIG UUID="12d495c7-36c9-4948-ae4f-9a46b138dbf5">
+                  <SHORT-NAME>SomeipSdClientServiceInstanceConfigdriving_information</SHORT-NAME>
+                  <INITIAL-FIND-BEHAVIOR>
+                    <INITIAL-DELAY-MAX-VALUE>0.1</INITIAL-DELAY-MAX-VALUE>
+                    <INITIAL-DELAY-MIN-VALUE>0.01</INITIAL-DELAY-MIN-VALUE>
+                    <INITIAL-REPETITIONS-BASE-DELAY>0.2</INITIAL-REPETITIONS-BASE-DELAY>
+                    <INITIAL-REPETITIONS-MAX>3</INITIAL-REPETITIONS-MAX>
+                  </INITIAL-FIND-BEHAVIOR>
+                  <SERVICE-FIND-TIME-TO-LIVE>3</SERVICE-FIND-TIME-TO-LIVE>
+                </SOMEIP-SD-CLIENT-SERVICE-INSTANCE-CONFIG>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

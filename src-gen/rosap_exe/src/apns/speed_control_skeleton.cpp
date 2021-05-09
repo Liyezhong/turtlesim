@@ -1,0 +1,83 @@
+/**********************************************************************************************************************
+ *  COPYRIGHT
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  \verbatim
+ *  Copyright (c) 2021 by Vector Informatik GmbH. All rights reserved.
+ *
+ *                This software is copyright protected and proprietary to Vector Informatik GmbH.
+ *                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+ *                All other rights remain with Vector Informatik GmbH.
+ *  \endverbatim
+ *  -------------------------------------------------------------------------------------------------------------------
+ *  FILE DESCRIPTION
+ *  -----------------------------------------------------------------------------------------------------------------*/
+/**        \file  rosap_exe/src/apns/speed_control_skeleton.cpp
+ *        \brief  Skeleton for service 'speed_control'.
+ *
+ *      \details
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ *  GENERATOR INFORMATION
+ *  -------------------------------------------------------------------------------------------------------------------
+ *    Generator Name: amsr_com_api
+ *         Commit ID: 6cc205edba694b4589f76a5356343f3aa8f48375
+ *********************************************************************************************************************/
+
+/**********************************************************************************************************************
+ *  INCLUDES
+ *********************************************************************************************************************/
+#include "apns/speed_control_skeleton.h"
+#include "ara/com/internal_com_exception.h"
+#include "ara/com/runtime.h"
+#include "socal/internal/instance_specifier_lookup_table.h"
+
+/*!
+ * \trace SPEC-4980240
+ * \trace SPEC-4980241
+ */
+namespace apns {
+namespace skeleton {
+constexpr ::amsr::socal::internal::configuration::SkeletonConfiguration speed_controlSkeleton::kConfiguration;
+
+speed_controlSkeleton::speed_controlSkeleton(ara::com::InstanceIdentifier instance,
+                                               ara::com::MethodCallProcessingMode mode)
+     : Base{instance, mode, kConfiguration}
+      , LKA_speed(this)
+      , ToGoal_speed(this)
+       {}
+
+speed_controlSkeleton::speed_controlSkeleton(ara::core::InstanceSpecifier instance,
+                                               ara::com::MethodCallProcessingMode mode)
+     : Base{instance, mode, kConfiguration}
+      , LKA_speed(this)
+      , ToGoal_speed(this)
+       {}
+
+speed_controlSkeleton::speed_controlSkeleton(ara::com::InstanceIdentifierContainer instance_identifiers,
+                                               ara::com::MethodCallProcessingMode mode)
+     : Base{instance_identifiers, mode, kConfiguration}
+      , LKA_speed(this)
+      , ToGoal_speed(this)
+       {}
+
+speed_controlSkeleton::~speed_controlSkeleton() {
+  // Stop all scheduled tasks related to this skeleton.
+  GetThreadPool().RemoveTasks(this);
+}
+
+void speed_controlSkeleton::DoFieldInitializationChecks() {
+  /* Check if all fields are initialized correctly
+    * - if a field has Setter, SetHandler must be registered.
+    * - if a field has Notification, Update must have been called.
+    * - if a field has Getter and no GetHandler is registered, Update() must have been called.
+    */
+}
+
+void speed_controlSkeleton::SendInitialFieldNotifications() {
+  // Send initial field events for all fields with "hasNotifier = true"
+}
+
+}  // namespace skeleton
+}  // namespace apns
+
